@@ -1,0 +1,17 @@
+--- PAGE 1 ---
+# METROHEALTH HOSPITAL SYSTEM (CUSTOMER_001) - RESTRICTED FORMULARY GUIDELINES
+Classification: Customer Confidential | Tenant: customer_001 | Authorized Roles: ADMIN, FDE_ENGINEER, CUSTOMER
+
+Section 1: MetroHealth Tier-1 Cardiovascular & Diabetes Formulary
+- Preferred SGLT2 Inhibitor: Empagliflozin 10 mg daily is the exclusive first-line preferred agent for MetroHealth Network patients with HFrEF or CKD (eGFR >= 20 mL/min/1.73m2). Dapagliflozin requires prior authorization (Tier-2).
+- Metformin Dispensing Protocol: All Metformin prescriptions within MetroHealth must be dispensed as Extended-Release (ER) 500 mg tablets to minimize GI distress unless contraindicated.
+- Target LDL Cholesterol: For MetroHealth cardiology patients with established ASCVD, the institutional goal is LDL < 55 mg/dL using high-intensity Atorvastatin 80 mg daily combined with Ezetimibe 10 mg daily if baseline reduction is < 50%.
+
+--- PAGE 2 ---
+# METROHEALTH HOSPITAL SYSTEM (CUSTOMER_001) - ANTIMICROBIAL STEWARDSHIP PROTOCOL
+Classification: Customer Confidential | Tenant: customer_001 | Authorized Roles: ADMIN, FDE_ENGINEER, CUSTOMER
+
+Section 2: MetroHealth Inpatient Sepsis & Pneumonia Pathway
+- Community-Acquired Pneumonia (CAP): Inpatient non-ICU patients must receive IV Ceftriaxone 1g daily + Oral Azithromycin 500 mg on day 1 then 250 mg daily for 5 days.
+- Hospital-Acquired Pneumonia (HAP) / VAP: Dual anti-pseudomonal coverage is mandatory: IV Cefepime 2g q8h + IV Tobramycin 7 mg/kg single daily dose, plus IV Vancomycin (trough goal 15-20 mcg/mL) for high MRSA risk (> 20% local ICU prevalence).
+- Restricted Antibiotics: Meropenem and Daptomycin require infectious disease clinical pharmacist approval within 24 hours of initiation.

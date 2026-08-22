@@ -1,0 +1,25 @@
+--- PAGE 1 ---
+Section 1: Pediatric Acute Otitis Media & Common Respiratory Infections
+Document: pediatric_guidelines.txt | Clinical Practice Guidelines
+
+Acute Otitis Media (AOM) Management:
+1. First-Line Antibiotic: High-dose Amoxicillin (80 to 90 mg/kg/day orally, divided into 2 doses) is the first-line treatment of choice for acute otitis media in pediatric patients without penicillin allergy.
+2. Treatment Duration:
+   - Children under 2 years of age or with severe symptoms: 10 days.
+   - Children aged 2 to 5 years with mild-to-moderate disease: 7 days.
+   - Children aged 6 years and older with mild symptoms: 5 to 7 days.
+3. Second-Line and Beta-Lactamase Coverage: In children who have received amoxicillin in the past 30 days or who have concurrent purulent conjunctivitis, prescribe Amoxicillin-Clavulanate (90 mg/kg/day of amoxicillin component with 6.4 mg/kg/day clavulanate in a 14:1 formulation).
+4. Penicillin Allergy Alternatives: Cefdinir (14 mg/kg/day), Cefuroxime axetil (30 mg/kg/day), or Azithromycin in severe anaphylactic penicillin allergy.
+
+--- PAGE 2 ---
+Section 2: Pediatric Dehydration Assessment and Fluid Protocols
+Document: pediatric_guidelines.txt | Clinical Practice Guidelines
+
+Assessment of Dehydration Severity in Pediatric Gastroenteritis:
+1. Mild Dehydration (3-5% fluid deficit): Normal mental status, slightly dry mucous membranes, normal capillary refill (< 2 seconds), normal tears, normal blood pressure.
+2. Moderate Dehydration (6-9% fluid deficit): Irritable or lethargic, dry mucous membranes, delayed capillary refill (2-3 seconds), decreased tears, sunken fontanelle, mild tachycardia.
+3. Severe Dehydration (>= 10% fluid deficit): Obtunded or comatose, cool mottled extremities, capillary refill > 3 seconds, absence of tears, parched mucous membranes, hypotension and rapid thready pulse (hypovolemic shock).
+
+Rehydration Protocol:
+- Mild to Moderate Dehydration: Oral Rehydration Therapy (ORT) with low-osmolarity Oral Rehydration Solution (ORS, sodium 75 mEq/L, glucose 75 mmol/L). Administer 50 to 100 mL/kg of ORS over 3 to 4 hours in frequent small sips (5 mL every 1-2 minutes).
+- Severe Dehydration / Shock: Immediate intravenous resuscitation with isotonic crystalloid (Normal Saline 0.9% or Ringer's Lactate) at 20 mL/kg IV bolus over 15 to 30 minutes, repeated as necessary until perfusion and pulse volume are restored.

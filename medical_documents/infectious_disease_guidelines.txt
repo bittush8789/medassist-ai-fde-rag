@@ -1,0 +1,68 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: INFECTIOUS DISEASES & SEPSIS PROTOCOLS
+================================================================================
+Document ID: DOC-ID-2026-009
+Effective Date: 2026-01-15
+Category: Infectious Diseases & Critical Care
+
+--- PAGE 1 ---
+SECTION 1: COMMUNITY-ACQUIRED PNEUMONIA (CAP) MANAGEMENT
+
+1.1 Severity Stratification (CURB-65 Criteria)
+Assess the following 5 risk factors (1 point each):
+- Confusion (new mental disorientation)
+- Urea (BUN > 19 mg/dL or blood urea > 7 mmol/L)
+- Respiratory Rate (>= 30 breaths/min)
+- Blood Pressure (Systolic < 90 mmHg or Diastolic <= 60 mmHg)
+- Age (>= 65 years)
+
+CURB-65 Score Interpretation & Disposition:
+- Score 0–1: Low risk; outpatient treatment appropriate.
+- Score 2: Moderate risk; consider short inpatient admission or supervised outpatient care.
+- Score 3–5: High risk; inpatient hospitalization required; evaluate for Intensive Care Unit (ICU) admission if score is 4–5.
+
+1.2 First-Line Outpatient Antibiotic Therapy
+- In patients without comorbidities or risk factors for antibiotic resistance:
+  * Amoxicillin 1 g PO three times daily (TID) for 5 to 7 days, OR
+  * Doxycycline 100 mg PO twice daily (BID) for 5 to 7 days.
+- In patients with chronic comorbidities (heart, lung, liver, or renal disease, diabetes, alcoholism, or malignancy):
+  * Combination Therapy: Amoxicillin-Clavulanate (875/125 mg PO BID or 2000/125 mg PO BID) PLUS Macrolide (Azithromycin 500 mg Day 1, then 250 mg daily) or Doxycycline 100 mg BID.
+  * Monotherapy Alternative: Respiratory Fluoroquinolone (Levofloxacin 750 mg PO daily or Moxifloxacin 400 mg PO daily) for 5 to 7 days.
+
+--- PAGE 2 ---
+SECTION 2: SEPSIS-3 AND SEPTIC SHOCK RESUSCITATION BUNDLE
+
+2.1 Sepsis-3 Definitions & Screening
+- Sepsis: Life-threatening organ dysfunction caused by a dysregulated host response to infection. Organ dysfunction is identified as an acute change in total SOFA score >= 2 points consequent to the infection.
+- Quick SOFA (qSOFA) Bedside Screening (>= 2 criteria indicates high risk):
+  1. Altered mental status (Glasgow Coma Scale < 15)
+  2. Systolic blood pressure <= 100 mmHg
+  3. Respiratory rate >= 22 breaths/min
+- Septic Shock: Sepsis with persisting hypotension requiring vasopressors to maintain MAP >= 65 mmHg AND serum lactate > 2 mmol/L despite adequate fluid resuscitation.
+
+2.2 Surviving Sepsis 1-Hour Management Bundle
+Initiate all elements immediately upon sepsis recognition:
+1. Measure serum blood lactate level (remeasure within 2 to 4 hours if initial lactate > 2 mmol/L).
+2. Obtain blood cultures prior to administration of antibiotics (at least 2 sets: aerobic and anaerobic).
+3. Administer broad-spectrum intravenous antimicrobials within 1 hour of recognition.
+4. Rapidly administer 30 mL/kg of IV crystalloid fluid (e.g., Balanced Crystalloid Solution or Normal Saline) for hypotension (MAP < 65 mmHg) or initial lactate >= 4 mmol/L.
+5. Apply vasopressors during or after fluid resuscitation to maintain Mean Arterial Pressure (MAP) >= 65 mmHg:
+   * First-line Vasopressor: Norepinephrine IV infusion (titrated to MAP >= 65 mmHg).
+   * Second-line Adjunct: Vasopressin (0.03 units/min) added to reduce Norepinephrine dosage.
+   * In refractory shock: Epinephrine (0.05–0.5 mcg/kg/min) or IV Hydrocortisone 200 mg/day.
+
+--- PAGE 3 ---
+SECTION 3: CLOSTRIDIOIDES DIFFICILE & URINARY TRACT INFECTIONS (UTI)
+
+3.1 Clostridioides difficile Infection (CDI) Treatment Guidelines
+- Non-Severe and Severe CDI (First Episode):
+  * Preferred Regimen: Oral Fidaxomicin 200 mg PO twice daily for 10 days.
+  * Standard Alternative: Oral Vancomycin 125 mg PO four times daily (QID) for 10 days.
+  * NOTE: Metronidazole is NO LONGER recommended as first-line therapy for CDI due to inferior cure rates.
+- Fulminant CDI (Hypotension, shock, ileus, or toxic megacolon):
+  * High-dose Oral Vancomycin 500 mg PO or via nasogastric tube QID PLUS Intravenous Metronidazole 500 mg IV every 8 hours.
+
+3.2 Uncomplicated Acute Cystitis (UTI) First-Line Options
+- Nitrofurantoin monohydrate/macrocrystals: 100 mg PO twice daily with food for 5 days (Avoid if eGFR < 30 mL/min).
+- Trimethoprim-Sulfamethoxazole (TMP-SMX): 160/800 mg (1 Double-Strength tablet) PO twice daily for 3 days (Avoid if local resistance exceeds 20%).
+- Fosfomycin trometamol: 3 g single-dose oral powder sachet dissolved in water.

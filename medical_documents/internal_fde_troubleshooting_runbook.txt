@@ -1,0 +1,16 @@
+--- PAGE 1 ---
+# INTERNAL AI FORWARD DEPLOYED ENGINEERING (FDE) RUNBOOK & INFRASTRUCTURE SOP
+Classification: Internal Engineering Confidential | Tenant: internal | Authorized Roles: ADMIN, FDE_ENGINEER
+
+Section 1: Production RAG Deployment & ChromaDB Cluster Failover
+- ChromaDB High-Availability Protocol: When Chroma collection latency exceeds 2500ms or disk I/O hits 90%, initiate zero-downtime blue-green replica swap using orchestrator command `make chroma-failover-secondary`.
+- BGE Embedding Drift Diagnostic: Run monthly embedding drift detection script against standard test vectors. If cosine distance variance > 0.08, execute automated background re-indexing pipeline with `python -m ingestion.chroma_store --reset`.
+- Groq LPU Inference Circuit Breakers: If primary model endpoint returns HTTP 429 (Rate Limit) or 503 (Overloaded), the system must fallback within 200ms to backup LLaMA-3.1-8B-Instant with strict temperature clamped at 0.05.
+
+--- PAGE 2 ---
+# INTERNAL AI FORWARD DEPLOYED ENGINEERING (FDE) RUNBOOK & INCIDENT RESPONSE
+Classification: Internal Engineering Confidential | Tenant: internal | Authorized Roles: ADMIN, FDE_ENGINEER
+
+Section 2: Customer Integration Security & Tenant Key Rotation SOP
+- Customer API Key Rotation: Rotate customer-specific Groq API keys and JWT signing secrets quarterly on the first Monday of each quarter using secret store vault command `vault write secret/medrag/fde-keys`.
+- Zero-Hallucination Audit Check: Run nightly automated regression test across all 22 clinical domains. Any ungrounded hallucination must trigger an urgent P1 Jira ticket assigned to the on-call Forward Deployed Engineer.

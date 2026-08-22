@@ -1,0 +1,47 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: OPHTHALMOLOGY & ENT EMERGENCIES
+================================================================================
+Document ID: DOC-ID-2026-022
+Effective Date: 2026-03-15
+Category: Eye, Ear, Nose & Throat Emergency Care
+
+--- PAGE 1 ---
+SECTION 1: ACUTE ANGLE-CLOSURE GLAUCOMA (AACG) PROTOCOL
+
+1.1 Clinical Recognition & Emergency Triage
+- Classic Presentation: Sudden severe periorbital ocular pain, headache, nausea, vomiting, blurred vision, colored halos around lights.
+- Slit-Lamp & Tonometry Findings: Marked conjunctival injection (ciliary flush), cloudy/steamy cornea, fixed mid-dilated pupil, shallow anterior chamber, and elevated Intraocular Pressure (IOP, typically 40–80 mmHg; normal 10–21 mmHg).
+
+1.2 Stepwise Medical IOP-Lowering Cocktail (Initiate Immediately):
+1. Topical Beta-Blocker: Timolol 0.5% (1 drop topically in affected eye).
+2. Topical Alpha-2 Agonist: Apraclonidine 1% or Brimonidine 0.2% (1 drop topically).
+3. Topical Cholinergic: Pilocarpine 1% to 2% (1 drop topically every 15 min for 2 doses to induce miosis once IOP < 40 mmHg).
+4. Systemic Carbonic Anhydrase Inhibitor: Acetazolamide 500 mg IV or PO stat.
+5. Hyperosmotic Agent: Intravenous Mannitol 20% (1.0–2.0 g/kg IV infused over 30–45 min) for refractory severe elevations.
+- Definitive Cure: Urgent bilateral peripheral laser iridotomy (performed by an ophthalmologist).
+
+--- PAGE 2 ---
+SECTION 2: EPISTAXIS (NOSEBLEED) EMERGENCY MANAGEMENT PROTOCOL
+
+2.1 Anterior Epistaxis (Kiesselbach Plexus / Little's Area)
+1. Direct Compression: Pinch the soft anterior cartilaginous portion of the nose firmly for 10 to 15 continuous minutes with patient sitting upright and leaning slightly forward.
+2. Topical Vasoconstrictor: Spray topical Oxymetazoline 0.05% (Afrin) or Phenylephrine, or place a cotton pledget soaked in 4% Lidocaine + Epinephrine into the naris.
+3. Chemical Cautery: If bleeding vessel is identified, apply Silver Nitrate cautery stick for 3 to 5 seconds (Cauterize only one side of the nasal septum to prevent septal perforation).
+4. Anterior Nasal Packing: Insert a pre-lubricated nasal tampon (Merocel or Rapid Rhino 5.5 cm/7.5 cm) if bleeding continues. Co-prescribe oral Cephalexin or Amoxicillin-Clavulanate to prevent Toxic Shock Syndrome while packing is in place (remove packing in 48–72 hours).
+
+2.2 Posterior Epistaxis (Sphenopalatine Artery)
+- Clinical Features: Profuse bleeding visualized flowing down the posterior oropharynx despite anterior packing.
+- Action: Place a dual-balloon posterior nasal catheter (or Foley catheter 10–14 Fr inflated with 5–10 mL sterile saline in nasopharynx) and urgently admit to hospital for ENT surgical or endovascular embolization.
+
+--- PAGE 3 ---
+SECTION 3: PERITONSILLAR ABSCESS (QUINSY) & DEEP NECK SPACE INFECTIONS
+
+3.1 Peritonsillar Abscess (PTA) Diagnostic Triad:
+- Severe unilateral sore throat, 'hot potato' muffled voice, and trismus (inability to fully open the jaw). Physical exam demonstrates unilateral tonsillar bulging with contralateral uvular deviation.
+
+3.2 Emergency Aspiration & Antimicrobial Pharmacotherapy
+1. Drainage: Needle aspiration (using 18–20G needle with distal guard) or incision and drainage (I&D) of the fluctuant tonsillar superior pole.
+2. Intravenous Antimicrobial Regimen:
+   * Ampicillin-Sulbactam (Unasyn) 3.0 g IV every 6 hours, OR
+   * Ceftriaxone 2.0 g IV daily PLUS Metronidazole 500 mg IV every 8 hours (for anaerobic coverage).
+3. Systemic Corticosteroids: Dexamethasone 10 mg IV single dose (rapidly reduces throat edema and trismus).

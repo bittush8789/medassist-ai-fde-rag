@@ -1,0 +1,43 @@
+--- PAGE 1 ---
+Section 1: Advanced Cardiac Life Support (ACLS) Resuscitation Protocol
+Document: emergency_protocols.txt | Clinical Knowledge Base
+
+Ventricular Fibrillation (VF) and Pulseless Ventricular Tachycardia (pVT):
+1. Initiate high-quality CPR immediately (100-120 compressions/min, depth 2-2.4 inches, allow full chest recoil).
+2. Attach monitor/defibrillator and deliver unsynchronized shock (biphasic 120-200 Joules).
+3. Resume CPR immediately for 2 minutes without checking rhythm.
+4. Vascular access: Establish IV or IO access.
+5. Epinephrine administration: Epinephrine 1 mg IV/IO every 3 to 5 minutes after the second shock.
+6. Antiarrhythmic therapy: Amiodarone first dose 300 mg IV/IO bolus, followed by second dose of 150 mg IV/IO if VF/pVT persists. Alternatively, Lidocaine 1 to 1.5 mg/kg IV/IO initial dose, then 0.5 to 0.75 mg/kg every 5 to 10 minutes.
+7. Reversible Causes (H's and T's): Hypovolemia, Hypoxia, Hydrogen ion (acidosis), Hypo-/hyperkalemia, Hypothermia, Tension pneumothorax, Tamponade (cardiac), Toxins, Thrombosis (pulmonary or coronary).
+
+--- PAGE 2 ---
+Section 2: Anaphylaxis Emergency Management
+Document: emergency_protocols.txt | Clinical Knowledge Base
+
+Anaphylaxis Recognition and First-Line Treatment:
+Anaphylaxis is an acute, life-threatening systemic hypersensitivity reaction characterized by rapid onset of airway compromise, respiratory symptoms (wheezing, stridor), and/or hypotension following exposure to a potential allergen.
+
+First-Line Pharmacotherapy:
+- Intramuscular (IM) Epinephrine is the mandatory first-line therapy.
+- Concentration: 1:1,000 (1 mg/mL).
+- Adult Dosing: 0.3 mg to 0.5 mg IM injected into the anterolateral mid-thigh.
+- Pediatric Dosing: 0.01 mg/kg IM (maximum 0.3 mg per injection).
+- Repeat Dosing: Repeat every 5 to 15 minutes if symptoms persist or progress.
+
+Adjunctive Emergency Measures:
+1. High-flow oxygen (10-15 L/min via non-rebreather mask).
+2. Isotonic IV Crystalloids: Rapid IV infusion of Normal Saline (1-2 Liters in adults, 20 mL/kg in children) for hypotension refractory to initial epinephrine.
+3. Second-Line Adjuncts: H1-antihistamines (Diphenhydramine 25-50 mg IV), H2-antagonists (Famotidine 20 mg IV), and systemic corticosteroids (Methylprednisolone 1-2 mg/kg IV) for prevention of biphasic reactions. Antihistamines and steroids must NEVER delay prompt epinephrine administration.
+
+--- PAGE 3 ---
+Section 3: Acute Ischemic Stroke Reperfusion Protocols
+Document: emergency_protocols.txt | Clinical Knowledge Base
+
+Acute Ischemic Stroke Evaluation and Thrombolysis:
+1. Time Window for Intravenous Thrombolysis: Intravenous Alteplase (tPA, 0.9 mg/kg, max 90 mg; 10% bolus over 1 min, remainder over 60 min) or Tenecteplase (TNK, 0.25 mg/kg, max 25 mg single IV bolus) is recommended within 4.5 hours of symptom onset in eligible patients.
+2. Blood Pressure Thresholds:
+   - Blood pressure must be maintained < 185 mmHg systolic and < 110 mmHg diastolic prior to initiating intravenous thrombolytic infusion.
+   - Post-thrombolysis blood pressure must be kept < 180/105 mmHg for at least 24 hours.
+   - Recommended antihypertensives: Labetalol 10-20 mg IV over 1-2 min or Nicardipine IV infusion 5 mg/h titrated by 2.5 mg/h every 5-15 min (max 15 mg/h).
+3. Endovascular Thrombectomy (EVT): Recommended for large vessel occlusion (LVO) in the anterior circulation within 6 to 24 hours of last known normal, selected by perfusion neuroimaging.

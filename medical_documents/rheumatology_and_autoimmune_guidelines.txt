@@ -1,0 +1,48 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: RHEUMATOLOGY & AUTOIMMUNE DISEASES
+================================================================================
+Document ID: DOC-ID-2026-015
+Effective Date: 2026-02-10
+Category: Rheumatology & Autoimmune Care
+
+--- PAGE 1 ---
+SECTION 1: RHEUMATOID ARTHRITIS (RA) PHARMACOTHERAPY & DMARD GUIDELINES
+
+1.1 First-Line Conventional Synthetic DMARD (csDMARD)
+- Oral Methotrexate (MTX) is the foundational first-line therapy:
+  * Initial Dose: 10 to 15 mg PO once weekly (titrate rapidly by 2.5–5 mg every 2–4 weeks to target 20–25 mg once weekly or switch to subcutaneous MTX if GI intolerance occurs).
+  * Folic Acid Co-prescription: 1 to 5 mg PO daily (except on Methotrexate administration day) to prevent stomatitis, alopecia, and transaminitis.
+  * Safety Monitoring: Complete blood count (CBC), serum creatinine, and Liver Function Tests (AST/ALT) every 2–4 weeks initially, then every 8–12 weeks.
+  * Absolute Contraindications: Pregnancy, lactation, severe hepatic disease, alcoholism, and eGFR < 30 mL/min.
+
+1.2 Biologic DMARD (bDMARD) Initiation Rules
+- In patients with inadequate response to Methotrexate after 3 to 6 months:
+  * Add TNF Inhibitors (e.g., Adalimumab 40 mg SC every 2 weeks, Infliximab IV, Etanercept 50 mg SC weekly) or Non-TNF Biologics (Tocilizumab, Abatacept) or JAK Inhibitors (Upadacitinib, Tofacitinib).
+  * MANDATORY PRE-BIOLOGIC SCREENING: Screen all patients for latent Tuberculosis (TB) with IGRA (QuantiFERON) or TST, and viral hepatitis serologies (Hepatitis B Surface Antigen, Core Antibody, Hepatitis C).
+
+--- PAGE 2 ---
+SECTION 2: SYSTEMIC LUPUS ERYTHEMATOSUS (SLE) & LUPUS NEPHRITIS
+
+2.1 Universal Hydroxychloroquine (HCQ) Recommendation
+- Hydroxychloroquine (HCQ) is strongly recommended for all SLE patients regardless of disease activity unless strictly contraindicated:
+  * Maximum Safe Daily Dosing: <= 5.0 mg/kg actual body weight per day (typically 200–400 mg PO daily) to minimize long-term retinal toxicity.
+  * Ophthalmology Screening: Baseline baseline fundus exam and visual field testing, followed by annual screening starting after 5 years of use (or annually if high risk).
+
+2.2 Induction Therapy for Active Lupus Nephritis (Class III/IV/V)
+- Combination Immunosuppression:
+  * High-dose systemic corticosteroids (IV Methylprednisolone pulses 500–1000 mg daily x 3 days, followed by oral Prednisone 0.5–1.0 mg/kg/day tapered over months) PLUS
+  * Oral Mycophenolate Mofetil (MMF, 2–3 g/day in divided doses) OR Intravenous Cyclophosphamide (Eurolupus low-dose regimen: 500 mg IV every 2 weeks for 6 doses).
+
+--- PAGE 3 ---
+SECTION 3: ACUTE GOUT FLARE & CHRONIC URATE-LOWERING THERAPY
+
+3.1 Acute Gouty Arthritis Pharmacotherapy
+- First-Line Anti-inflammatory Options (Initiate within 24 hours of flare onset):
+  * Oral Colchicine: 1.2 mg PO stat at first sign of flare, followed by 0.6 mg 1 hour later (Maximum total dose 1.8 mg in the first 24 hours; do not repeat for at least 3 days).
+  * NSAIDs (High Dose): Indomethacin 50 mg PO TID or Naproxen 500 mg PO BID with food (Avoid in CKD and peptic ulcer disease).
+  * Systemic Corticosteroids: Oral Prednisone 30–40 mg PO daily for 5 days (Preferred in renal impairment).
+
+3.2 Long-Term Urate-Lowering Therapy (ULT)
+- Indications for ULT: >= 2 flares per year, presence of tophi, CKD Stage 3+, or history of urolithiasis.
+- First-Line ULT Agent: Allopurinol starting at 100 mg PO daily (50 mg daily in CKD Stage 4–5), titrated every 2–4 weeks to target serum uric acid < 6.0 mg/dL (< 360 mcmol/L).
+- Flare Prophylaxis during ULT initiation: Co-prescribe low-dose Colchicine (0.6 mg daily) or low-dose NSAID for at least 3 to 6 months.

@@ -1,0 +1,51 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: TRAUMA RESUSCITATION & ORTHOPEDIC EMERGENCIES
+================================================================================
+Document ID: DOC-ID-2026-021
+Effective Date: 2026-03-10
+Category: Emergency Trauma & Orthopedics
+
+--- PAGE 1 ---
+SECTION 1: ATLS PRIMARY SURVEY & MASSIVE TRANSFUSION PROTOCOL (MTP)
+
+1.1 Advanced Trauma Life Support (ATLS) ABCDE Primary Survey
+- A (Airway & Cervical Spine): Assess patency, maintain in-line spinal stabilization, perform definitive airway (RSI with Endotracheal Tube) for GCS <= 8 or airway compromise.
+- B (Breathing & Ventilation): Immediate needle decompression (5th intercostal space anterior axillary line) or tube thoracostomy for tension pneumothorax.
+- C (Circulation & Hemorrhage Control): Apply direct external pressure or tourniquets for extremity exsanguination; pelvic binder for unstable pelvic ring fractures.
+- D (Disability): Rapid neurological evaluation (GCS, pupillary response).
+- E (Exposure & Environmental Control): Completely undress patient to identify occult injuries, immediately cover with warm blankets to prevent hypothermia.
+
+1.2 Massive Transfusion Protocol (MTP) & Damage Control Resuscitation
+- Hemostatic Resuscitation (1:1:1 Balanced Ratio):
+  * Transfuse 1 Unit Packed Red Blood Cells (PRBC) : 1 Unit Fresh Frozen Plasma (FFP) : 1 Unit Platelets.
+- Tranexamic Acid (TXA):
+  * 1.0 g IV bolus over 10 minutes administered within 3 hours of trauma (CRASH-2 trial), followed by 1.0 g IV infusion over 8 hours.
+- Lethal Triad Prevention: Actively manage and correct Hypothermia (temperature < 35°C), Metabolic Acidosis (pH < 7.2), and Coagulopathy (INR > 1.5).
+
+--- PAGE 2 ---
+SECTION 2: OPEN FRACTURE MANAGEMENT (GUSTILO-ANDERSON CLASSIFICATION)
+
+2.1 Gustilo-Anderson Severity Classification
+- Type I: Clean skin wound < 1 cm in length, minimal soft tissue damage, simple fracture pattern.
+- Type II: Laceration 1 to 10 cm in length without extensive soft tissue damage or flaps.
+- Type III: High-energy open fracture with wound > 10 cm and extensive soft tissue stripping:
+  * IIIA: Adequate periosteal coverage of bone despite extensive laceration.
+  * IIIB: Extensive soft tissue loss requiring plastic surgery flap coverage.
+  * IIIC: Open fracture associated with arterial injury requiring vascular repair.
+
+2.2 Antibiotic Prophylaxis Protocols (Initiate within 1 hour of injury):
+- Gustilo Type I & II: Intravenous Cefazolin 2 g IV every 8 hours (Clindamycin 600–900 mg IV for severe beta-lactam allergy) for 24 hours after wound closure.
+- Gustilo Type III: Cefazolin 2 g IV Q8H PLUS Gentamicin 5 mg/kg IV once daily (or Ceftriaxone 2 g IV daily) for 48 to 72 hours.
+- Soil / Farmyard / Aquatic Contamination: Add High-Dose Penicillin G (4 million units IV every 4 hours) or Ampicillin-Sulbactam for Clostridium and anaerobic spore coverage.
+
+--- PAGE 3 ---
+SECTION 3: ACUTE COMPARTMENT SYNDROME PROTOCOL
+
+3.1 The 6 P's of Compartment Syndrome
+- Pain out of proportion to exam and pain with passive stretch of involved muscles (Earliest and most reliable clinical indicator).
+- Paresthesias (early nerve ischemia).
+- Pallor, Poikilothermia, Paralysis, and Pulselessness (Late signs indicating irreversible tissue necrosis).
+
+3.2 Diagnostic Pressure Thresholds & Emergent Fasciotomy
+- Delta Pressure Calculation: Delta P = Diastolic Blood Pressure minus Intracompartmental Compartment Pressure.
+- Surgical Threshold: An absolute compartment pressure > 30 mmHg OR a Delta Pressure <= 30 mmHg is an absolute indication for immediate emergency surgical decompressive fasciotomy.

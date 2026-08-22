@@ -1,0 +1,50 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: MEDICAL TOXICOLOGY & ACUTE POISONING
+================================================================================
+Document ID: DOC-ID-2026-020
+Effective Date: 2026-03-05
+Category: Medical Toxicology & Overdose Management
+
+--- PAGE 1 ---
+SECTION 1: ACETAMINOPHEN (PARACETAMOL) OVERDOSE & NAC PROTOCOL
+
+1.1 Risk Thresholds & Rumack-Matthew Nomogram
+- Toxic Threshold: Single acute ingestion >= 150 mg/kg or 7.5 g in adults.
+- Serum Acetaminophen Level: Measure at 4 hours post-ingestion (or immediately if presentation > 4 hours). Plot on the Rumack-Matthew Nomogram. Treatment line starts at 150 mcg/mL (993 mcmol/L) at 4 hours.
+
+1.2 N-Acetylcysteine (NAC) Antidote Administration
+- Timing: Maximum efficacy is achieved when NAC is administered within 8 hours of acute ingestion (near 100% hepatoprotection).
+- Intravenous 3-Bag 21-Hour Protocol:
+  1. Loading Bag: 150 mg/kg in 200 mL D5W infused over 60 minutes.
+  2. Second Bag: 50 mg/kg in 500 mL D5W infused over 4 hours.
+  3. Third Bag: 100 mg/kg in 1000 mL D5W infused over 16 hours.
+- Discontinuation Criteria: Check ALT/AST, Acetaminophen level, and INR prior to stopping the 3rd bag. Continue infusion if APAP level is detectable or transaminases remain elevated.
+
+--- PAGE 2 ---
+SECTION 2: OPIOID OVERDOSE & NALOXONE RESUSCITATION PROTOCOL
+
+2.1 Classic Opioid Toxidrome Triad
+- Central Nervous System Depression (Coma / Unresponsiveness).
+- Miosis (Pinpoint Pupils - Note: may be normal in Meperidine or Tramadol overdose).
+- Respiratory Depression (Respiratory rate < 8–10 breaths/min or apnea, cyanosis, SpO2 < 90%).
+
+2.2 Naloxone (Narcan) Dosing Protocol
+- Intravenous / Intramuscular Route: Initial dose 0.4 to 2.0 mg IV/IM (Titrate to restore adequate spontaneous ventilation, NOT full arousal, to prevent acute opioid withdrawal).
+- Intranasal Route: 4.0 mg single-spray administered into one nostril.
+- Observation Window: Half-life of Naloxone is 30 to 90 minutes. Patients with overdose from long-acting opioids (Methadone, Extended-Release Oxycodone) or synthetic fentanyl analogues require continuous IV Naloxone infusion and observation for >= 4 to 6 hours.
+
+--- PAGE 3 ---
+SECTION 3: CARDIOACTIVE MEDICATION TOXICITY (BETA-BLOCKERS & CCBs)
+
+3.1 High-Dose Insulin Euglycemia Therapy (HIET)
+- Indication: Refractory hypotension, bradycardia, or cardiogenic shock from Beta-Blocker or Calcium Channel Blocker (CCB, Verapamil/Diltiazem) poisoning.
+- HIET Protocol:
+  * Regular Insulin Bolus: 1.0 unit/kg IV stat.
+  * Continuous Insulin Infusion: 0.5 to 1.0 unit/kg/hour (titrated up to 2.0–10.0 units/kg/hour as needed).
+  * 10% to 50% Dextrose Co-infusion: Maintain blood glucose 100–200 mg/dL with serial glucose checks every 15–30 minutes.
+  * Serum Potassium Repletion: Maintain K+ 2.5–3.0 mEq/L (Insulin drives potassium intracellularly; avoid overzealous repletion).
+
+3.2 Additional Specific Antidotes:
+- Calcium Chloride 10% (10–20 mL IV over 5 min via central line) or Calcium Gluconate 10% (30 mL IV).
+- Intravenous Glucagon: 3 to 10 mg slow IV bolus over 3–5 min (activates adenylate cyclase bypassing beta-receptors).
+- Intralipid 20% Emulsion Therapy: 1.5 mL/kg IV bolus for severe lipid-soluble CCB toxicity (e.g., Verapamil, Amlodipine).

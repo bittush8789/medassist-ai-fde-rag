@@ -1,0 +1,82 @@
+[
+  {
+    "id": "eval_001",
+    "question": "What is the recommended first-line pharmacological treatment for Type 2 Diabetes and what is the starting dose?",
+    "category": "single_document_retrieval",
+    "expected_answer": "Metformin is the preferred initial pharmacological agent, starting at 500 mg once or twice daily with meals and titrating to 2000 mg daily.",
+    "expected_document": "diabetes_guidelines.pdf",
+    "expected_page": 2
+  },
+  {
+    "id": "eval_002",
+    "question": "What are the four foundational medication classes in Guideline-Directed Medical Therapy (GDMT) for Heart Failure with reduced ejection fraction (HFrEF)?",
+    "category": "single_document_retrieval",
+    "expected_answer": "Foundational quadruple therapy includes: 1) ARNI (Sacubitril/Valsartan) or ACEi/ARB, 2) Evidence-based Beta-blockers, 3) Mineralocorticoid Receptor Antagonists (MRA), and 4) SGLT2 Inhibitors (Dapagliflozin or Empagliflozin).",
+    "expected_document": "cardiology_guidelines.pdf",
+    "expected_page": 2
+  },
+  {
+    "id": "eval_003",
+    "question": "What is the eGFR cutoff for Metformin contraindication and how does it compare to the initiation threshold for SGLT2 inhibitors like Empagliflozin?",
+    "category": "multi_document_comparison",
+    "expected_answer": "Metformin is contraindicated when eGFR is below 30 mL/min/1.73m2, whereas Empagliflozin can be initiated down to an eGFR of 20-25 mL/min/1.73m2 for cardiorenal protection.",
+    "expected_document": "diabetes_guidelines.pdf",
+    "expected_page": 4
+  },
+  {
+    "id": "eval_004",
+    "question": "What differences or conflicting target blood pressure thresholds exist across clinical hypertension guidelines?",
+    "category": "conflicting_guidelines",
+    "expected_answer": "Modern clinical guidelines recommend a target of < 130/80 mmHg for high-risk cohorts, whereas traditional guidelines (such as JNC-8 legacy protocols) recommend < 140/90 mmHg for general adults under 60 and < 150/90 mmHg for adults aged 60 and older.",
+    "expected_document": "clinical_guidelines.pdf",
+    "expected_page": 3
+  },
+  {
+    "id": "eval_005",
+    "question": "What is the first-line medication and dose for acute anaphylaxis in adults?",
+    "category": "emergency_resuscitation",
+    "expected_answer": "Intramuscular (IM) Epinephrine 0.3 to 0.5 mg (1:1000 concentration) injected into the anterolateral mid-thigh.",
+    "expected_document": "emergency_protocols.txt",
+    "expected_page": 2
+  },
+  {
+    "id": "eval_006",
+    "question": "What is the 21-hour IV N-Acetylcysteine 3-bag protocol for acetaminophen overdose?",
+    "category": "toxicology_and_antidotes",
+    "expected_answer": "Bag 1: 150 mg/kg over 1 hour; Bag 2: 50 mg/kg over 4 hours; Bag 3: 100 mg/kg over 16 hours.",
+    "expected_document": "toxicology_and_poisoning_guidelines.txt",
+    "expected_page": 1
+  },
+  {
+    "id": "eval_007",
+    "question": "What is the loading and maintenance dose of Magnesium Sulfate for preeclampsia seizure prophylaxis?",
+    "category": "obstetrics_protocols",
+    "expected_answer": "Loading dose of 4-6 g IV over 20-30 minutes, followed by a continuous maintenance infusion of 1-2 g/hour for 24 hours.",
+    "expected_document": "obstetrics_and_gynecology_guidelines.txt",
+    "expected_page": 1
+  },
+  {
+    "id": "eval_008",
+    "question": "What is the Glasgow-Blatchford Score cutoff for high-risk upper gastrointestinal bleeding?",
+    "category": "gastroenterology_triage",
+    "expected_answer": "A score of >= 2 identifies moderate-to-high risk requiring urgent hospital admission and endoscopy, while 0-1 denotes low risk.",
+    "expected_document": "gastroenterology_and_hepatology_guidelines.txt",
+    "expected_page": 1
+  },
+  {
+    "id": "eval_009",
+    "question": "What are the surgical steps for performing a pediatric heart transplantation in congenital heart disease?",
+    "category": "out_of_scope_hallucination_check",
+    "expected_answer": "I could not find sufficient information in the provided medical documents to answer this question.",
+    "expected_document": null,
+    "expected_page": null
+  },
+  {
+    "id": "eval_010",
+    "question": "What is the 'Rule of 15' for managing hypoglycemia?",
+    "category": "single_document_retrieval",
+    "expected_answer": "When blood glucose drops below 70 mg/dL, administer 15-20 grams of fast-acting glucose, recheck blood glucose after 15 minutes, repeat if still < 70 mg/dL, and provide a complex carbohydrate snack once normalized.",
+    "expected_document": "diabetes_guidelines.pdf",
+    "expected_page": 3
+  }
+]

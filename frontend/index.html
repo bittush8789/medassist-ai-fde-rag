@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Knowledge Assistant</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="brand-container">
+                    <div class="brand-icon-wrapper">
+                        <div class="brand-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                                <path d="M12 5v14"/>
+                                <path d="M5 12h14"/>
+                            </svg>
+                        </div>
+                        <span class="brand-pulse-ring"></span>
+                    </div>
+                    <div class="brand-text">
+                        <h2>MedAssist</h2>
+                        <span class="badge-fde">Medical Assistant</span>
+                    </div>
+                </div>
+                <button class="btn-new-chat" id="btn-new-chat" title="Start a new conversation">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>New Consultation</span>
+                </button>
+            </div>
+
+            <!-- Knowledge Base Library Card -->
+            <div class="kb-status-card" id="kb-status-card" title="Click to view reference library">
+                <div class="status-header">
+                    <div class="pulse-status">
+                        <span class="status-dot"></span>
+                        <span class="status-title">Reference Library</span>
+                    </div>
+                    <button class="btn-browse-docs" id="btn-browse-docs" title="View all reference documents">
+                        <span>View All</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="kb-meta">
+                    <div class="kb-stat">
+                        <span class="stat-label">Indexed Documents</span>
+                        <span class="stat-val highlight" id="kb-chunks-count">22 Guidelines</span>
+                    </div>
+                    <div class="kb-stat">
+                        <span class="stat-label">Source Checking</span>
+                        <span class="stat-val">Verified & Active</span>
+                    </div>
+                    <div class="kb-stat">
+                        <span class="stat-label">Answers Backed By</span>
+                        <span class="stat-val">Official Documents</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Consultations Section -->
+            <div class="conversations-section">
+                <div class="section-title-wrapper">
+                    <span class="section-title">Past Consultations</span>
+                    <span class="conv-count-badge" id="conv-count-badge">0</span>
+                </div>
+                <div class="conversations-list" id="conversations-list">
+                    <!-- Dynamic conversation list items populated here -->
+                </div>
+            </div>
+
+            <!-- Sidebar Footer -->
+            <div class="sidebar-footer">
+                <div class="system-tag" title="Answers are strictly verified against medical documents">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span>Verified Medical Documents Only</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <!-- Header Bar -->
+            <header class="chat-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle Sidebar" title="Toggle Sidebar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <div class="current-consultation-info">
+                        <div class="title-row">
+                            <h1 id="current-consultation-title">Medical Knowledge Assistant</h1>
+                            <span class="status-pill-online" id="status-pill">● Online & Ready</span>
+                        </div>
+                        <span class="consultation-subtitle">Instant answers backed by official clinical guidelines and medication manuals</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <!-- User Profile & RBAC Role Badge -->
+                    <div class="user-profile-badge" id="user-profile-badge" title="Active Authenticated Session">
+                        <span class="user-role-pill" id="user-role-pill">ADMIN</span>
+                        <span class="user-name" id="user-name">admin</span>
+                        <span class="user-tenant" id="user-tenant">@system</span>
+                    </div>
+                    <button class="btn-header-action admin-only-btn" id="btn-admin-console" title="Open Enterprise Administration Console">
+                        <span>⚙️ Admin Console</span>
+                    </button>
+                    <button class="btn-header-action" id="btn-auth-switch" title="Switch User / Login as different role">
+                        <span>🔄 Switch User</span>
+                    </button>
+                    <button class="btn-header-action" id="btn-fde-toggle" title="Toggle AI Forward Deployed Engineer (FDE) Diagnostics & Telemetry">
+                        <span id="fde-icon">⚡</span>
+                        <span id="fde-text">FDE Mode: Off</span>
+                    </button>
+                    <button class="btn-header-action" id="btn-theme-toggle" title="Switch Theme">
+                        <span class="theme-icon" id="theme-icon">☀️</span>
+                        <span id="theme-text">Light Mode</span>
+                    </button>
+                    <button class="btn-header-action" id="btn-open-docs" title="View all available guidelines">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        <span id="doc-count-header-text">Documents (25)</span>
+                    </button>
+                    <button class="btn-header-action" id="btn-export-chat" title="Download consultation notes">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Save Notes</span>
+                    </button>
+                    <button class="btn-header-action danger" id="btn-clear-chat" title="Clear conversation">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                        <span>Clear</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Message Stream Area -->
+            <div class="messages-viewport" id="messages-viewport">
+                <!-- Welcome View -->
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="welcome-badge">
+                        <span class="welcome-sparkle">✦</span>
+                        <span>Verified Medical Knowledge Base</span>
+                    </div>
+                    <h2>How can I help with your clinical inquiry?</h2>
+                    <p class="welcome-desc">
+                        Get clear, evidence-based answers about clinical guidelines, medication dosing, emergency steps, and treatment protocols. Every answer includes direct references to the original document pages.
+                    </p>
+
+                    <!-- Category Tabs -->
+                    <div class="category-tabs" id="category-tabs">
+                        <button class="category-tab active" data-category="all">🩺 All Topics</button>
+                        <button class="category-tab" data-category="emergency">🚨 Emergency Care</button>
+                        <button class="category-tab" data-category="chronic">💉 Diabetes & Heart</button>
+                        <button class="category-tab" data-category="pediatrics">👶 Children & Cancer Care</button>
+                        <button class="category-tab" data-category="pharmacology">💊 Medicines & Safety</button>
+                    </div>
+
+                    <!-- Prompt Starters Grid -->
+                    <div class="prompt-starters-grid" id="prompt-starters-grid">
+                        <!-- Card 1: Diabetes -->
+                        <div class="prompt-card" data-category="chronic" data-prompt="What first-line pharmacotherapy is recommended for Type 2 Diabetes and what are the glycemic targets?">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">💊</span>
+                                <span class="prompt-tag pdf">Treatment Guideline</span>
+                            </div>
+                            <h4>Diabetes Care & Dosing</h4>
+                            <p>First-line Metformin dosing, target blood sugar levels (HbA1c &lt;7.0%), and low sugar emergency steps.</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+
+                        <!-- Card 2: ACLS & Anaphylaxis -->
+                        <div class="prompt-card" data-category="emergency" data-prompt="What is the first-line medication, dosage, and route for acute anaphylaxis in adults?">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">⚡</span>
+                                <span class="prompt-tag txt">Emergency Protocol</span>
+                            </div>
+                            <h4>Severe Allergic Reaction (Anaphylaxis)</h4>
+                            <p>First-line Epinephrine injection dosage (0.3–0.5 mg) and immediate life-saving steps.</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+
+                        <!-- Card 3: Stroke Thrombolysis -->
+                        <div class="prompt-card" data-category="emergency" data-prompt="What are the treatment time window and blood pressure criteria for IV thrombolysis in Acute Ischemic Stroke?">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">🧠</span>
+                                <span class="prompt-tag txt">Emergency Protocol</span>
+                            </div>
+                            <h4>Acute Stroke Treatment Window</h4>
+                            <p>Treatment time window (&lt;4.5 hours) and blood pressure safety limits before medication.</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+
+                        <!-- Card 4: Heart Failure -->
+                        <div class="prompt-card" data-category="chronic" data-prompt="Explain the Guideline-Directed Medical Therapy (GDMT) quadruple therapy for Heart Failure with reduced ejection fraction (HFrEF).">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">🫀</span>
+                                <span class="prompt-tag pdf">Treatment Guideline</span>
+                            </div>
+                            <h4>Heart Failure Therapy (HFrEF)</h4>
+                            <p>The 4 recommended drug classes that improve survival and reduce hospital stays.</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+
+                        <!-- Card 5: Pediatric AOM -->
+                        <div class="prompt-card" data-category="pediatrics" data-prompt="What is the recommended first-line antibiotic and dosing regimen for Pediatric Acute Otitis Media (AOM)?">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">👶</span>
+                                <span class="prompt-tag txt">Child Health Protocol</span>
+                            </div>
+                            <h4>Ear Infection in Children (AOM)</h4>
+                            <p>Recommended first-line antibiotic (Amoxicillin) dosage by weight and treatment duration.</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+
+                        <!-- Card 6: Febrile Neutropenia -->
+                        <div class="prompt-card" data-category="pediatrics" data-prompt="What is the clinical definition of Febrile Neutropenia and what initial empiric antibiotic regimens are recommended?">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">🎗️</span>
+                                <span class="prompt-tag txt">Cancer Care Protocol</span>
+                            </div>
+                            <h4>Fever During Chemotherapy</h4>
+                            <p>Fever and white blood cell thresholds requiring immediate antibiotic treatment.</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+
+                        <!-- Card 7: Drug Contraindications -->
+                        <div class="prompt-card" data-category="pharmacology" data-prompt="What are the renal function contraindications and dose adjustments for Metformin based on eGFR?">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">🧪</span>
+                                <span class="prompt-tag pdf">Drug Safety Guide</span>
+                            </div>
+                            <h4>Metformin & Kidney Function</h4>
+                            <p>When to adjust or stop Metformin based on kidney blood tests (eGFR levels).</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+
+                        <!-- Card 8: Guideline Comparisons -->
+                        <div class="prompt-card" data-category="chronic" data-prompt="What is the recommended blood pressure target for hypertension, and do different guidelines recommend different thresholds?">
+                            <div class="prompt-card-top">
+                                <span class="prompt-icon">⚖️</span>
+                                <span class="prompt-tag pdf">Treatment Comparison</span>
+                            </div>
+                            <h4>High Blood Pressure Targets</h4>
+                            <p>Clear comparison of different guideline targets (&lt;130/80 vs &lt;140/90 mmHg).</p>
+                            <div class="prompt-card-action">Ask Question →</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Message Feed Container -->
+                <div class="messages-list" id="messages-list"></div>
+            </div>
+
+            <!-- Scroll to Bottom Button -->
+            <button class="btn-scroll-bottom hidden" id="btn-scroll-bottom" title="Scroll to bottom">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+
+            <!-- Input Area -->
+            <footer class="chat-input-container">
+                <!-- Suggestion Quick Chips -->
+                <div class="quick-chips-row" id="quick-chips-row">
+                    <span class="chips-label">Popular Topics:</span>
+                    <button class="chip-btn" data-query="What is the first-line medication and dose for acute anaphylaxis?">🚨 Severe Allergic Reaction</button>
+                    <button class="chip-btn" data-query="What are the eGFR contraindications for Metformin?">💊 Metformin Kidney Safety</button>
+                    <button class="chip-btn" data-query="What is the IV thrombolysis window for Acute Ischemic Stroke?">🧠 Stroke Treatment Window</button>
+                    <button class="chip-btn" data-query="What is GDMT quadruple therapy for HFrEF?">🫀 Heart Failure Medications</button>
+                </div>
+
+                <form class="chat-input-form" id="chat-form">
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="query-input" 
+                            rows="1" 
+                            placeholder="Ask a medical or medication question in plain words..." 
+                            required
+                        ></textarea>
+                        <div class="input-actions-right">
+                            <button type="button" class="btn-voice-input" id="btn-voice-input" title="Speak question (Microphone)">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                    <line x1="12" y1="19" x2="12" y2="23"></line>
+                                    <line x1="8" y1="23" x2="16" y2="23"></line>
+                                </svg>
+                            </button>
+                            <button type="submit" class="btn-send" id="btn-send" aria-label="Send question" title="Send (Enter)">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="input-footer-row">
+                    <div class="keyboard-tip">
+                        <span>Press <strong>Enter</strong> to send, <strong>Shift + Enter</strong> for a new line</span>
+                    </div>
+                    <div class="input-disclaimer">
+                        <span>⚠️ <strong>Medical Notice:</strong> For informational and educational reference only. Consult a licensed healthcare provider for patient care decisions.</span>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Document Reference Inspector Drawer / Modal -->
+    <div class="modal-backdrop hidden" id="citation-modal">
+        <div class="citation-drawer">
+            <div class="drawer-header">
+                <div class="drawer-title-group">
+                    <div class="drawer-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Document Source Details</span>
+                    </div>
+                    <h3 id="modal-doc-title">Document Reference</h3>
+                </div>
+                <button class="btn-close-modal" id="btn-close-modal" aria-label="Close" title="Close Drawer (Esc)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="drawer-body">
+                <div class="source-metadata-pills">
+                    <div class="meta-pill">
+                        <span class="meta-key">Page Number:</span>
+                        <span class="meta-value highlight" id="modal-page-num">1</span>
+                    </div>
+                    <div class="meta-pill">
+                        <span class="meta-key">Topic / Section:</span>
+                        <span class="meta-value" id="modal-section-name">General</span>
+                    </div>
+                    <div class="meta-pill">
+                        <span class="meta-key">Document Match:</span>
+                        <span class="meta-value score" id="modal-relevance-score">High Match</span>
+                    </div>
+                    <div class="meta-pill">
+                        <span class="meta-key">Reference Code:</span>
+                        <span class="meta-value mono" id="modal-chunk-id">doc-ref</span>
+                    </div>
+                </div>
+                <div class="source-excerpt-container">
+                    <div class="excerpt-header-row">
+                        <h4>Original Text from the Official Document</h4>
+                        <button class="btn-copy-excerpt" id="btn-copy-excerpt" title="Copy text">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span>Copy Text</span>
+                        </button>
+                    </div>
+                    <div class="source-excerpt-text" id="modal-excerpt-text">
+                        Document text will appear here...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reference Library Modal -->
+    <div class="modal-backdrop hidden" id="kb-explorer-modal">
+        <div class="kb-modal-content">
+            <div class="drawer-header">
+                <div class="drawer-title-group">
+                    <div class="drawer-badge">Official Documents</div>
+                    <h3>Included Reference Documents (22 Available)</h3>
+                </div>
+                <button class="btn-close-modal" id="btn-close-kb-modal" aria-label="Close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="kb-modal-body">
+                <p class="kb-modal-sub">This assistant searches exclusively within these 22 official medical reference documents:</p>
+                
+                <div class="docs-grid">
+                    <!-- Doc 1 -->
+                    <div class="doc-card" data-query="What is the first-line pharmacotherapy and glycemic target for Type 2 Diabetes?">
+                        <div class="doc-card-badge pdf">Guideline</div>
+                        <h4>Diabetes Clinical Guidelines</h4>
+                        <p class="doc-summary">Diagnosis rules, Metformin dosing titration, target blood sugar goals (HbA1c &lt;7.0%), and hypoglycemia emergency steps.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 2 -->
+                    <div class="doc-card" data-query="What is the first-line therapy and target blood pressure for hypertension?">
+                        <div class="doc-card-badge pdf">Guideline</div>
+                        <h4>Hypertension Guidelines</h4>
+                        <p class="doc-summary">High blood pressure stages, first-line medication classes, and target blood pressure recommendations.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 3 -->
+                    <div class="doc-card" data-query="What is the GDMT quadruple therapy for Heart Failure with reduced ejection fraction?">
+                        <div class="doc-card-badge pdf">Guideline</div>
+                        <h4>Heart Failure (Cardiology) Guide</h4>
+                        <p class="doc-summary">Four foundational medications proven to improve heart function and survival in heart failure patients.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 4 -->
+                    <div class="doc-card" data-query="What are the eGFR contraindications and adverse reactions for Metformin and Lisinopril?">
+                        <div class="doc-card-badge pdf">Manual</div>
+                        <h4>Medication & Drug Safety Manual</h4>
+                        <p class="doc-summary">Complete medication safety information for Metformin, Lisinopril, Empagliflozin, and Atorvastatin (including kidney cutoffs).</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 5 -->
+                    <div class="doc-card" data-query="What clinical trial evidence exists for SGLT2 inhibitors in heart failure?">
+                        <div class="doc-card-badge pdf">Research</div>
+                        <h4>Medical Research Summaries</h4>
+                        <p class="doc-summary">Evidence summaries from major clinical trials comparing effectiveness in heart and kidney protection.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 6 -->
+                    <div class="doc-card" data-query="What is the first-line medication and dose for acute anaphylaxis and ACLS cardiac arrest?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Emergency & Resuscitation Protocols</h4>
+                        <p class="doc-summary">Emergency cardiac arrest algorithm, Epinephrine injection dosing for severe allergic reactions, and stroke time limits.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 7 -->
+                    <div class="doc-card" data-query="What is the antibiotic dose for Pediatric Acute Otitis Media and dehydration assessment?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Child Health Guidelines</h4>
+                        <p class="doc-summary">Antibiotic dosing by weight for children's ear infections (Amoxicillin) and dehydration assessment guidelines.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 8 -->
+                    <div class="doc-card" data-query="What is the definition and empiric antibiotic therapy for Febrile Neutropenia?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Cancer Care Pathways</h4>
+                        <p class="doc-summary">Emergency antibiotic treatment for fever in chemotherapy patients and medication side-effect management.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 9 (NEW) -->
+                    <div class="doc-card" data-query="What are the CURB-65 criteria and 1-hour sepsis resuscitation bundle?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Infectious Diseases & Sepsis Guide</h4>
+                        <p class="doc-summary">Pneumonia severity CURB-65 scoring, 1-Hour Sepsis Bundle (lactate, blood cultures, Norepinephrine), and C. diff treatment.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 10 (NEW) -->
+                    <div class="doc-card" data-query="What is the emergency medication protocol for Status Epilepticus and MDD SSRI therapy?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Neurology & Mental Health Guide</h4>
+                        <p class="doc-summary">Status Epilepticus Lorazepam/Keppra algorithms, SSRI/SNRI initiation timeline, Serotonin Syndrome triad, and Migraine Triptans.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 11 (NEW) -->
+                    <div class="doc-card" data-query="What is the KDIGO staging for CKD and the emergency hyperkalemia protocol?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Kidney Health & CKD Guidelines</h4>
+                        <p class="doc-summary">KDIGO CKD G1–G5 staging, SGLT2i and Finerenone renoprotection, and emergency Calcium Gluconate / Insulin protocol for Hyperkalemia.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 12 -->
+                    <div class="doc-card" data-query="What is the GINA Track 1 SMART asthma regimen and GOLD COPD treatment?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Asthma & COPD Pulmonology Guide</h4>
+                        <p class="doc-summary">GINA SMART ICS-formoterol approach, acute asthma nebulization/steroid protocols, and GOLD ABE dual bronchodilator therapy.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 13 (NEW) -->
+                    <div class="doc-card" data-query="What is the Glasgow-Blatchford score and acute upper GI bleeding protocol?">
+                        <div class="doc-card-badge txt">Guideline</div>
+                        <h4>Gastroenterology & Liver Guide</h4>
+                        <p class="doc-summary">Upper GI bleeding PPI/Octreotide infusions, SBP paracentesis criteria (PMN >= 250), IV Albumin, and acute pancreatitis.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 14 (NEW) -->
+                    <div class="doc-card" data-query="What are the diagnostic criteria and insulin/potassium resuscitation protocol for DKA?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Endocrine Emergencies & Hormones</h4>
+                        <p class="doc-summary">DKA anion gap resolution, potassium holding rules (K &lt; 3.3), Myxedema coma IV steroids, and adrenal crisis resuscitation.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 15 (NEW) -->
+                    <div class="doc-card" data-query="What is the first-line Methotrexate regimen for RA and Colchicine dosing for acute gout?">
+                        <div class="doc-card-badge txt">Guideline</div>
+                        <h4>Rheumatology & Autoimmune Guide</h4>
+                        <p class="doc-summary">Rheumatoid Arthritis csDMARD Methotrexate titration, Lupus Hydroxychloroquine safety (&lt;= 5 mg/kg), and acute Gout flares.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 16 (NEW) -->
+                    <div class="doc-card" data-query="What is the acute antihypertensive therapy and Magnesium Sulfate protocol for Preeclampsia?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Obstetrics & Women's Health</h4>
+                        <p class="doc-summary">Preeclampsia IV Labetalol/Hydralazine, Magnesium Sulfate seizure prophylaxis, and Postpartum Hemorrhage (PPH) uterotonics.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 17 (NEW) -->
+                    <div class="doc-card" data-query="What is the clinical management of Stevens-Johnson Syndrome (SJS) and non-purulent cellulitis?">
+                        <div class="doc-card-badge txt">Guideline</div>
+                        <h4>Dermatology & Wound Care</h4>
+                        <p class="doc-summary">SJS/TEN culprit drug withdrawal, SCORTEN score, non-purulent vs MRSA cellulitis antibiotic regimens, and wound staging.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 18 (NEW) -->
+                    <div class="doc-card" data-query="What are the initial DOAC dosing regimens for DVT/PE and Warfarin reversal protocols?">
+                        <div class="doc-card-badge txt">Guideline</div>
+                        <h4>Hematology & Anticoagulation Guide</h4>
+                        <p class="doc-summary">Apixaban and Rivaroxaban VTE regimens, urgent 4F-PCC reversal protocols, and acute Immune Thrombocytopenia (ITP) steroids.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 19 (NEW) -->
+                    <div class="doc-card" data-query="What medications should be avoided in older adults according to the Beers Criteria?">
+                        <div class="doc-card-badge txt">Guideline</div>
+                        <h4>Geriatrics & Palliative Care</h4>
+                        <p class="doc-summary">Beers Criteria high-risk drugs, Confusion Assessment Method (CAM) delirium bundle, and WHO ladder palliative opioid conversion.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 20 (NEW) -->
+                    <div class="doc-card" data-query="What is the 21-hour IV N-Acetylcysteine protocol for Acetaminophen overdose?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Toxicology & Poisoning Protocols</h4>
+                        <p class="doc-summary">Rumack-Matthew nomogram, IV NAC 3-bag regimen, Naloxone for opioid overdose, and High-Dose Insulin (HIET) for CCB toxicity.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 21 (NEW) -->
+                    <div class="doc-card" data-query="What is the 1:1:1 Massive Transfusion Protocol and Gustilo open fracture management?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Trauma Life Support & Orthopedics</h4>
+                        <p class="doc-summary">ATLS primary survey ABCDE, 1:1:1 MTP with TXA, Gustilo open fracture antibiotic prophylaxis, and Compartment Syndrome.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 22 -->
+                    <div class="doc-card" data-query="What is the emergency medical cocktail for Acute Angle-Closure Glaucoma?">
+                        <div class="doc-card-badge txt">Protocol</div>
+                        <h4>Eye, Ear, Nose & Throat Emergencies</h4>
+                        <p class="doc-summary">Acute Angle-Closure Glaucoma emergency cocktail (Timolol, Acetazolamide, Mannitol), Epistaxis anterior packing, and Quinsy.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 23 (Customer 001) -->
+                    <div class="doc-card rbac-card" data-query="What is MetroHealth's preferred first-line SGLT2 inhibitor and inpatient CAP antibiotic pathway?">
+                        <div class="doc-card-badge txt rbac-badge-cust">Customer 001</div>
+                        <h4>MetroHealth Hospital Formulary</h4>
+                        <p class="doc-summary">Empagliflozin 10mg first-line preference, ER Metformin rules, LDL &lt; 55 mg/dL target, and inpatient CAP Ceftriaxone + Azithromycin pathway.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 24 (Customer 002) -->
+                    <div class="doc-card rbac-card" data-query="What is Apex Clinic's quadruple antiemetic regimen for emetogenic chemotherapy?">
+                        <div class="doc-card-badge txt rbac-badge-cust">Customer 002</div>
+                        <h4>Apex Clinic Oncology & Pediatrics</h4>
+                        <p class="doc-summary">HEC Olanzapine/Aprepitant quadruple antiemetic bundle, mAb infusion premedication, and pediatric status epilepticus Intranasal Midazolam.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+
+                    <!-- Doc 25 (Internal Engineering) -->
+                    <div class="doc-card rbac-card" data-query="What is the ChromaDB cluster failover command and BGE embedding drift threshold?">
+                        <div class="doc-card-badge txt rbac-badge-internal">Internal FDE Only</div>
+                        <h4>AI FDE Operations & Runbook</h4>
+                        <p class="doc-summary">ChromaDB cluster failover SOP, BGE embedding drift detection threshold (&gt; 0.08 variance), and quarterly JWT secret rotation policy.</p>
+                        <span class="doc-ask-hint">Click to ask a question →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth / Role Switcher Modal -->
+    <div class="modal-backdrop hidden" id="auth-modal">
+        <div class="modal-card auth-modal-card">
+            <div class="modal-header">
+                <div class="auth-header-title">
+                    <div class="auth-shield-icon">🛡️</div>
+                    <div>
+                        <h3>Authentication & Role-Based Access</h3>
+                        <p class="auth-modal-subtitle">Select a pre-configured enterprise persona or log in with credentials</p>
+                    </div>
+                </div>
+                <button class="btn-close-modal" id="btn-close-auth-modal" title="Close">✕</button>
+            </div>
+            
+            <div class="modal-body auth-modal-body">
+                <!-- 1-Click Quick Login Presets -->
+                <div class="quick-login-section">
+                    <span class="quick-login-label">Quick-Login Personas (Demo Accounts)</span>
+                    <div class="quick-login-grid">
+                        <button class="quick-login-card" data-user="admin" data-pass="Admin@12345">
+                            <div class="quick-card-header">
+                                <span class="role-badge role-admin">ADMIN</span>
+                                <span class="quick-tenant">system</span>
+                            </div>
+                            <strong>admin</strong>
+                            <span class="quick-desc">Full platform access, audit logs & user governance</span>
+                        </button>
+                        
+                        <button class="quick-login-card" data-user="engineer" data-pass="Engineer@12345">
+                            <div class="quick-card-header">
+                                <span class="role-badge role-fde">FDE_ENGINEER</span>
+                                <span class="quick-tenant">customer_001</span>
+                            </div>
+                            <strong>engineer</strong>
+                            <span class="quick-desc">Internal engineering SOPs + MetroHealth tenant</span>
+                        </button>
+
+                        <button class="quick-login-card" data-user="customer1" data-pass="Customer@12345">
+                            <div class="quick-card-header">
+                                <span class="role-badge role-cust">CUSTOMER</span>
+                                <span class="quick-tenant">customer_001</span>
+                            </div>
+                            <strong>customer1</strong>
+                            <span class="quick-desc">MetroHealth Hospital (Isolated tenant clearance)</span>
+                        </button>
+
+                        <button class="quick-login-card" data-user="customer2" data-pass="Customer@12345">
+                            <div class="quick-card-header">
+                                <span class="role-badge role-cust">CUSTOMER</span>
+                                <span class="quick-tenant">customer_002</span>
+                            </div>
+                            <strong>customer2</strong>
+                            <span class="quick-desc">Apex Clinic (Zero access to MetroHealth/Internal)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="auth-divider">
+                    <span>Or Sign In with Custom Credentials</span>
+                </div>
+
+                <!-- Custom Login Form -->
+                <form id="custom-login-form" class="custom-login-form">
+                    <div class="form-group">
+                        <label for="login-username">Username</label>
+                        <input type="text" id="login-username" placeholder="e.g. admin or customer1" required autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password">
+                    </div>
+                    <div class="form-error hidden" id="login-error-msg"></div>
+                    <button type="submit" class="btn-primary-auth" id="btn-submit-login">
+                        <span>Sign In</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Console Modal -->
+    <div class="modal-backdrop hidden" id="admin-modal">
+        <div class="modal-card admin-modal-card">
+            <div class="modal-header">
+                <div class="auth-header-title">
+                    <div class="auth-shield-icon">⚙️</div>
+                    <div>
+                        <h3>Enterprise Administration & Governance</h3>
+                        <p class="auth-modal-subtitle">User role management, tenant provisioning, and security audit log</p>
+                    </div>
+                </div>
+                <button class="btn-close-modal" id="btn-close-admin-modal" title="Close">✕</button>
+            </div>
+
+            <!-- Admin Tabs -->
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="users">👥 User Management</button>
+                <button class="admin-tab" data-tab="logs">🛡️ Security Audit Logs</button>
+            </div>
+            
+            <div class="modal-body admin-modal-body">
+                <!-- Tab 1: Users -->
+                <div class="admin-tab-content active" id="tab-content-users">
+                    <div class="admin-users-header">
+                        <h4>Provisioned Accounts</h4>
+                        <button class="btn-add-user" id="btn-toggle-add-user">+ Add User</button>
+                    </div>
+
+                    <!-- Add User Inline Form -->
+                    <div class="add-user-panel hidden" id="add-user-panel">
+                        <h5>Create New Account</h5>
+                        <form id="form-create-user" class="create-user-form">
+                            <div class="form-row">
+                                <input type="text" id="new-user-username" placeholder="Username (e.g. nurse_lee)" required>
+                                <input type="email" id="new-user-email" placeholder="Email (e.g. lee@hospital.org)" required>
+                            </div>
+                            <div class="form-row">
+                                <input type="password" id="new-user-password" placeholder="Password (min 6 chars)" required>
+                                <input type="text" id="new-user-fullname" placeholder="Full Name (e.g. Nurse Lee)" required>
+                            </div>
+                            <div class="form-row">
+                                <select id="new-user-role">
+                                    <option value="CUSTOMER">CUSTOMER</option>
+                                    <option value="FDE_ENGINEER">FDE_ENGINEER</option>
+                                    <option value="ADMIN">ADMIN</option>
+                                </select>
+                                <input type="text" id="new-user-tenant" placeholder="Tenant ID (e.g. customer_001)" value="customer_001" required>
+                            </div>
+                            <button type="submit" class="btn-save-user">Create User Account</button>
+                        </form>
+                    </div>
+
+                    <!-- Users Table -->
+                    <div class="table-container">
+                        <table class="admin-table" id="users-table">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Full Name</th>
+                                    <th>Role</th>
+                                    <th>Tenant</th>
+                                    <th>Created</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="users-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Audit Logs -->
+                <div class="admin-tab-content" id="tab-content-logs">
+                    <div class="admin-users-header">
+                        <h4>Security Audit Events</h4>
+                        <button class="btn-refresh-logs" id="btn-refresh-logs">🔄 Refresh Feed</button>
+                    </div>
+                    <div class="table-container">
+                        <table class="admin-table" id="logs-table">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>User</th>
+                                    <th>Role</th>
+                                    <th>Tenant</th>
+                                    <th>Action</th>
+                                    <th>Status</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody id="logs-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container hidden" id="toast-container">
+        <div class="toast" id="toast-msg">Notification</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

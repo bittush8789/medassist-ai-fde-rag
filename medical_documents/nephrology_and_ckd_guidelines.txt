@@ -1,0 +1,67 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: NEPHROLOGY & CHRONIC KIDNEY DISEASE (CKD)
+================================================================================
+Document ID: DOC-ID-2026-011
+Effective Date: 2026-01-25
+Category: Nephrology & Renal Care
+
+--- PAGE 1 ---
+SECTION 1: KDIGO CHRONIC KIDNEY DISEASE (CKD) STAGING & EVALUATION
+
+1.1 Definition of Chronic Kidney Disease (CKD)
+CKD is defined as abnormalities of kidney structure or function, present for > 3 months, with implications for health. Criteria include:
+- Estimated Glomerular Filtration Rate (eGFR) < 60 mL/min/1.73 m2, OR
+- Markers of kidney damage (Albuminuria with uACR >= 30 mg/g, urine sediment abnormalities, histological alterations, tubular disorders, or structural imaging abnormalities).
+
+1.2 KDIGO GFR Categories (G1 to G5):
+- G1: Normal or high (eGFR >= 90 mL/min/1.73 m2, with other evidence of kidney damage)
+- G2: Mildly decreased (eGFR 60–89 mL/min/1.73 m2)
+- G3a: Mildly to moderately decreased (eGFR 45–59 mL/min/1.73 m2)
+- G3b: Moderately to severely decreased (eGFR 30–44 mL/min/1.73 m2)
+- G4: Severely decreased (eGFR 15–29 mL/min/1.73 m2)
+- G5: Kidney failure / End-stage renal disease (eGFR < 15 mL/min/1.73 m2)
+
+1.3 KDIGO Albuminuria Categories (A1 to A3 based on urine Albumin-to-Creatinine Ratio uACR):
+- A1: Normal to mildly increased (uACR < 30 mg/g or < 3 mg/mmol)
+- A2: Moderately increased (uACR 30–300 mg/g or 3–30 mg/mmol, previously 'microalbuminuria')
+- A3: Severely increased (uACR > 300 mg/g or > 30 mg/mmol, including nephrotic range)
+
+--- PAGE 2 ---
+SECTION 2: RENOPROTECTION & GDMT FOR DIABETIC & NON-DIABETIC CKD
+
+2.1 Foundational Renoprotective Pharmacotherapy
+- Renin-Angiotensin System (RAS) Inhibitors:
+  * ACE inhibitors (e.g., Lisinopril, Ramipril) or ARBs (e.g., Losartan, Telmisartan) are strongly recommended for patients with hypertension, CKD, and severely increased albuminuria (uACR > 300 mg/g).
+  * Rule of 30%: A serum creatinine rise <= 30% from baseline within 2 to 4 weeks of starting an ACEi/ARB represents hemodynamically expected intraglomerular pressure reduction and is NOT a reason to stop therapy.
+  * Avoid simultaneous combination of ACEi + ARB due to increased risk of hyperkalemia and acute kidney injury without added benefit.
+
+- SGLT2 Inhibitors (Dapagliflozin 10 mg daily or Empagliflozin 10 mg daily):
+  * Recommended for patients with Type 2 Diabetes and CKD, and in non-diabetic CKD with albuminuria down to an eGFR threshold of 20 mL/min/1.73 m2.
+  * Significantly reduces CKD progression, end-stage renal disease, cardiovascular death, and heart failure hospitalizations.
+
+- Non-Steroidal Mineralocorticoid Receptor Antagonist (Finerenone):
+  * Indicated for adult patients with Type 2 Diabetes and CKD with albuminuria (uACR >= 30 mg/g) on maximally tolerated doses of ACEi/ARB.
+  * Dosing based on eGFR: 20 mg PO daily if eGFR >= 60; 10 mg PO daily if eGFR 25–59 mL/min/1.73 m2. Requires regular monitoring of serum potassium.
+
+--- PAGE 3 ---
+SECTION 3: ACUTE HYPERKALEMIA EMERGENCY MANAGEMENT ALGORITHM
+
+3.1 Severity Classification (Serum Potassium Levels)
+- Mild: 5.1 – 5.5 mEq/L
+- Moderate: 5.6 – 6.4 mEq/L
+- Severe: >= 6.5 mEq/L or any level with electrocardiographic (ECG) changes (peaked T waves, PR prolongation, widened QRS, loss of P wave, sine wave pattern).
+
+3.2 Stepwise Hyperkalemia Resuscitation Protocol
+1. Membrane Stabilization (Immediate, onset 1–3 min, duration 30–60 min):
+   * Calcium Gluconate 10%: 10 mL (1 g) IV infused over 2 to 5 minutes with continuous cardiac monitoring.
+   * Repeat dose after 5 to 10 minutes if ECG changes persist. Note: Calcium stabilizes cardiac myocytes but does NOT lower serum potassium.
+
+2. Intracellular Potassium Shifting (Onset 15–30 min, duration 2–6 hours):
+   * Intravenous Regular Insulin 10 units IV bolus PLUS 50 mL of 50% Dextrose (D50W, 25 grams glucose) to prevent hypoglycemia.
+   * Inhaled Beta-2 Agonist: Albuterol 10–20 mg nebulized over 10–15 minutes (additive effect with insulin).
+   * Sodium Bicarbonate IV: 50 mEq IV over 5 minutes (useful primarily in metabolic acidosis).
+
+3. Total Body Potassium Elimination:
+   * Loop Diuretics: Furosemide 40–80 mg IV in non-oliguric patients with functioning kidneys.
+   * Gastrointestinal Cation Exchangers: Sodium Zirconium Cyclosilicate (Lokelma) 10 g PO TID for up to 48 hours, or Patiromer (Veltassa) 8.4 g PO daily.
+   * Emergent Hemodialysis: Definitive treatment for refractory, severe hyperkalemia (K+ >= 6.5 mEq/L) or acute renal failure.

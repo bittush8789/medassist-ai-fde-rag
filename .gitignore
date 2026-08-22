@@ -1,0 +1,27 @@
+# Environment variables
+.env
+
+# Python cache & virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+
+# Database & Vector DB
+chroma_db/
+*.db
+*.sqlite3
+
+# Logs & testing
+logs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp

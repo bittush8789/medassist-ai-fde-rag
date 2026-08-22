@@ -1,0 +1,14 @@
+--- PAGE 1 ---
+# APEX CLINICAL NETWORK (CUSTOMER_002) - SPECIALIZED FORMULARY & CLINICAL POLICIES
+Classification: Customer Confidential | Tenant: customer_002 | Authorized Roles: ADMIN, FDE_ENGINEER, CUSTOMER
+
+Section 1: Apex Clinic Oncology & Immunotherapy Guidelines
+- Apex Clinic First-Line Antiemetic Regimen: Highly emetogenic chemotherapy (HEC) requires standard quadruple antiemetic prophylaxis: Oral Olanzapine 10 mg + IV Aprepitant 125 mg + IV Ondansetron 16 mg + Oral Dexamethasone 12 mg on Day 1.
+- Apex Infusion Center Hypersensitivity Protocol: For all monoclonal antibody infusions (e.g. Rituximab, Trastuzumab), pre-medicate with IV Diphenhydramine 50 mg + Oral Acetaminophen 650 mg 30 minutes prior to infusion.
+
+--- PAGE 2 ---
+# APEX CLINICAL NETWORK (CUSTOMER_002) - PEDIATRIC DOSING RESTRICTIONS
+Classification: Customer Confidential | Tenant: customer_002 | Authorized Roles: ADMIN, FDE_ENGINEER, CUSTOMER
+
+Section 2: Apex Pediatric Emergency Drug Table
+- Pediatric Status Epilepticus: Apex protocol mandates Intranasal Midazolam 0.2 mg/kg (max 10 mg) for pre-hospital/triage, followed by IV Levetiracetam 60 mg/kg (max 4500 mg) infused over 10 minutes if seizures persist beyond 5 minutes.

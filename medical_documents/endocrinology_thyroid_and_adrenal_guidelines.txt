@@ -1,0 +1,55 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: ENDOCRINE EMERGENCIES & HORMONAL CARE
+================================================================================
+Document ID: DOC-ID-2026-014
+Effective Date: 2026-02-05
+Category: Endocrinology & Metabolic Disorders
+
+--- PAGE 1 ---
+SECTION 1: DIABETIC KETOACIDOSIS (DKA) & HYPEROSMOLAR HYPERGLYCEMIC STATE (HHS)
+
+1.1 Diagnostic Criteria for DKA
+- Blood glucose > 250 mg/dL (13.9 mmol/L).
+- Arterial or venous pH < 7.30.
+- Serum bicarbonate < 18 mEq/L.
+- Elevated serum or urine ketones (beta-hydroxybutyrate > 3.0 mmol/L).
+- Anion gap > 12 mEq/L [Calculated as: Na - (Cl + HCO3)].
+
+1.2 Stepwise DKA Resuscitation Protocol
+1. Fluid Therapy:
+   * 0.9% Normal Saline (0.9% NaCl) at 1000–1500 mL in the first hour.
+   * Switch to 0.45% NaCl if corrected serum sodium is normal or high.
+   * Add 5% Dextrose (D5W or D5 1/2NS) when blood glucose drops below 200 mg/dL to maintain glucose 150–200 mg/dL while continuing insulin until anion gap closes.
+2. Insulin Infusion:
+   * IV Regular Insulin continuous infusion at 0.1 units/kg/hour (or 0.14 units/kg/hour without bolus).
+   * CRITICAL POTASSIUM RULE: If serum potassium < 3.3 mEq/L, HOLD insulin infusion until potassium is repleted to >= 3.3 mEq/L to prevent fatal cardiac arrhythmias.
+3. Potassium Management:
+   * If K+ is 3.3–5.2 mEq/L, add 20–30 mEq KCl per liter of IV fluid to maintain serum K+ between 4.0 and 5.0 mEq/L.
+4. Resolution Criteria: Blood glucose < 200 mg/dL PLUS 2 of the following: serum bicarbonate >= 15 mEq/L, venous pH > 7.30, and anion gap <= 12 mEq/L. Administer basal SQ insulin 2 hours prior to stopping IV insulin.
+
+--- PAGE 2 ---
+SECTION 2: HYPOTHYROIDISM & MYXEDEMA COMA PROTOCOL
+
+2.1 Outpatient Primary Hypothyroidism Replacement
+- Levothyroxine (T4) Monotherapy:
+  * Full replacement dose: 1.6 mcg/kg/day based on ideal body weight (e.g., 100–125 mcg daily).
+  * Elderly patients or patients with known coronary artery disease: Start low at 25 to 50 mcg PO daily and titrate every 6 to 8 weeks based on serum TSH (Target TSH 0.5–2.5 mIU/L).
+  * Administration instructions: Take in the morning on an empty stomach with a full glass of water, at least 30–60 minutes before breakfast (separate from calcium and iron supplements by >= 4 hours).
+
+2.2 Myxedema Coma Emergency Protocol
+- Presentation: Hypothermia, severe lethargy/coma, bradycardia, hypoventilation, hyponatremia.
+- Immediate Emergency Pharmacotherapy:
+  * Intravenous Stress-Dose Hydrocortisone: 100 mg IV bolus every 8 hours (Must be given BEFORE or simultaneously with thyroid hormone to avoid precipitating acute adrenal crisis).
+  * Intravenous Levothyroxine: Loading dose 200–400 mcg IV bolus, followed by 50–100 mcg IV daily.
+  * Consider IV Liothyronine (T3): 5–20 mcg IV loading dose for severe refractory cases.
+
+--- PAGE 3 ---
+SECTION 3: ACUTE ADRENAL CRISIS MANAGEMENT
+
+3.1 Clinical Recognition
+- Severe hypotension/refractory shock unresponsive to fluid boluses and vasopressors, fever, nausea, vomiting, abdominal pain, marked hyponatremia, hyperkalemia, and hypoglycemia.
+
+3.2 Emergency Pharmacotherapy
+1. Immediate Intravenous Hydrocortisone: 100 mg IV stat bolus, followed by 50 mg IV every 6 hours (or 200 mg/24 hours continuous infusion) for 24 to 48 hours until stabilized.
+2. Rapid Fluid Resuscitation: 0.9% Normal Saline with 5% Dextrose (D5NS) at 1 L/hour in the first 1 to 2 hours to correct hypovolemia, hyponatremia, and hypoglycemia.
+3. Mineralocorticoid coverage: High-dose Hydrocortisone (>= 100 mg/day) provides sufficient mineralocorticoid activity. Fludrocortisone (0.1 mg PO daily) is only added once Hydrocortisone dose is tapered below 50 mg/day.

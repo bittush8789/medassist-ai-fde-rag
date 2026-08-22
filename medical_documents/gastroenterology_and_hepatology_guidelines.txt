@@ -1,0 +1,51 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: GASTROENTEROLOGY & HEPATOLOGY
+================================================================================
+Document ID: DOC-ID-2026-013
+Effective Date: 2026-02-01
+Category: Gastroenterology & Hepatology
+
+--- PAGE 1 ---
+SECTION 1: ACUTE UPPER GASTROINTESTINAL BLEEDING (UGIB) PROTOCOL
+
+1.1 Risk Stratification & Resuscitation
+- Initial Triage with Glasgow-Blatchford Score (GBS):
+  * GBS score 0–1: Low risk; eligible for early discharge and outpatient endoscopy.
+  * GBS score >= 2: Moderate-to-high risk; requires urgent hospital admission and endoscopic intervention.
+- Resuscitation Targets:
+  * Restrictive blood transfusion threshold: Transfuse Packed Red Blood Cells (PRBC) when Hemoglobin < 7.0 g/dL (Target post-transfusion Hb 7.0–9.0 g/dL). In patients with active cardiovascular disease, maintain Hb >= 8.0 g/dL.
+
+1.2 Pharmacological Interventions Prior to Endoscopy
+- High-Dose Proton Pump Inhibitor (PPI) Therapy (Peptic Ulcer Disease):
+  * Pantoprazole or Esomeprazole: 80 mg IV bolus followed by 8 mg/hour continuous IV infusion for 72 hours, OR intermittent high-dose IV (40–80 mg IV BID).
+- Suspected Variceal Bleeding (Cirrhosis / Portal Hypertension):
+  * Octreotide: 50 mcg IV bolus followed immediately by 50 mcg/hour continuous IV infusion for 2 to 5 days.
+  * Prophylactic Antibiotics: Ceftriaxone 1 g IV daily for up to 7 days to prevent bacterial translocation and spontaneous bacterial peritonitis.
+- Endoscopy Timing: Perform Esophagogastroduodenoscopy (EGD) within 24 hours of presentation after adequate hemodynamic stabilization.
+
+--- PAGE 2 ---
+SECTION 2: CIRRHOSIS COMPLICATIONS & SPONTANEOUS BACTERIAL PERITONITIS (SBP)
+
+2.1 Diagnostic Paracentesis & SBP Criteria
+- Perform urgent diagnostic paracentesis in all hospitalized patients with cirrhosis and new or worsening ascites, fever, abdominal pain, or hepatic encephalopathy.
+- Diagnostic Criteria for SBP:
+  * Ascitic fluid absolute Polymorphonuclear (PMN) neutrophil count >= 250 cells/mcL (0.25 x 10^9/L), in the absence of a surgically treatable intra-abdominal source.
+
+2.2 Empiric Antibiotic Regimen & IV Albumin Infusion
+- First-Line Antimicrobial Therapy:
+  * Intravenous Cefotaxime (2 g IV every 8 hours) OR Ceftriaxone (2 g IV every 24 hours) for 5 days.
+- Intravenous Albumin Infusion Protocol (Reduces Hepatorenal Syndrome & Mortality):
+  * Administer 20% or 25% Albumin at 1.5 g/kg body weight within 6 hours of diagnosis, followed by 1.0 g/kg on Day 3 of treatment.
+- SBP Secondary Prophylaxis: Oral Ciprofloxacin (500 mg PO daily) or Trimethoprim-Sulfamethoxazole (1 DS tablet daily) indefinitely following recovery.
+
+--- PAGE 3 ---
+SECTION 3: ACUTE PANCREATITIS DIAGNOSIS & MANAGEMENT
+
+3.1 Revised Atlanta Classification (Diagnosis requires 2 of 3 criteria):
+1. Severe, persistent epigastric abdominal pain radiating to the back.
+2. Serum lipase or amylase elevation >= 3 times the upper limit of normal (ULN).
+3. Characteristic cross-sectional imaging findings (CT with IV contrast, MRI, or transabdominal ultrasound).
+
+3.2 Initial Resuscitation & Nutritional Support
+- Fluid Therapy: Goal-directed IV hydration with Lactated Ringer's solution (200–500 mL/hour or 5–10 mL/kg/hour initially) to maintain urine output > 0.5 mL/kg/hour and normalize BUN/hematocrit.
+- Nutrition: In mild acute pancreatitis, initiate oral feeding with low-fat solid or liquid diet as soon as abdominal pain improves and ileus resolves. Routine prophylactic antibiotics are NOT recommended for sterile necrosis.

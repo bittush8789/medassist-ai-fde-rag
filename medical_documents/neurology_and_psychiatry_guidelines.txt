@@ -1,0 +1,67 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: NEUROLOGY & PSYCHIATRIC CARE
+================================================================================
+Document ID: DOC-ID-2026-010
+Effective Date: 2026-01-20
+Category: Neurology & Mental Health Guidelines
+
+--- PAGE 1 ---
+SECTION 1: STATUS EPILEPTICUS EMERGENCY MANAGEMENT PROTOCOL
+
+1.1 Definition & Time Thresholds
+- Status Epilepticus (SE): A seizure lasting > 5 minutes, or >= 2 discrete seizures between which there is incomplete recovery of consciousness.
+- Time t1 (5 minutes): Time when emergent treatment must be initiated to prevent neuronal injury.
+- Time t2 (30 minutes): Time when long-term neuronal consequences and pharmacoresistance rapidly increase.
+
+1.2 Stepwise Antiepileptic Pharmacotherapy
+- Phase 1: Emergent Initial Therapy (0 to 5–10 minutes):
+  * First-Line Option (IV access available): IV Lorazepam 0.1 mg/kg (typically 4 mg slow IV push, rate <= 2 mg/min; may repeat once after 5–10 min if seizure persists).
+  * First-Line Option (No IV access): Intramuscular (IM) Midazolam 10 mg for patients > 40 kg (or 5 mg for 13–40 kg), administered into the anterolateral thigh.
+  * Alternative (Rectal): Diazepam rectal gel (0.2 mg/kg, max 20 mg).
+
+- Phase 2: Urgent Control Therapy (10 to 30 minutes, if seizure continues):
+  * Intravenous Levetiracetam (Keppra): 60 mg/kg IV (maximum dose 4500 mg) infused over 10 minutes.
+  * Intravenous Fosphenytoin: 20 mg PE/kg IV (maximum 1500 mg PE) at a rate <= 150 mg PE/min with continuous ECG and blood pressure monitoring.
+  * Intravenous Sodium Valproate: 40 mg/kg IV (maximum 3000 mg) infused over 5–10 minutes.
+
+- Phase 3: Refractory Status Epilepticus (> 30 minutes):
+  * General anesthesia with continuous IV infusion of Midazolam, Propofol, or Pentobarbital with endotracheal intubation and continuous EEG monitoring.
+
+--- PAGE 2 ---
+SECTION 2: MAJOR DEPRESSIVE DISORDER (MDD) & SSRI PHARMACOTHERAPY
+
+2.1 First-Line Pharmacological Options
+- Selective Serotonin Reuptake Inhibitors (SSRIs) are foundational first-line agents:
+  * Sertraline: Initial dose 50 mg PO daily; therapeutic range 50–200 mg daily.
+  * Escitalopram: Initial dose 10 mg PO daily; therapeutic range 10–20 mg daily.
+  * Fluoxetine: Initial dose 20 mg PO daily; therapeutic range 20–60 mg daily.
+- Serotonin-Norepinephrine Reuptake Inhibitors (SNRIs) alternative first-line:
+  * Venlafaxine Extended-Release: Initial 75 mg PO daily; range 75–225 mg daily (Monitor blood pressure at higher doses).
+  * Duloxetine: Initial 30–60 mg PO daily; range 60–120 mg daily.
+
+2.2 Clinical Response Timeline & Monitoring
+- Clinical Response Expectation: Early improvement in sleep and energy may appear in 1–2 weeks, but full antidepressant response requires 4 to 6 weeks of adequate dosing.
+- Black Box Warning: Monitor all patients closely for worsening depression, agitation, or emerging suicidal ideation, especially during the first 4 weeks of therapy or following dose adjustments.
+
+2.3 Serotonin Syndrome Warning Signs (Hunter Toxicity Criteria)
+- Characterized by the classic clinical triad:
+  1. Neuromuscular Excitability: Hyperreflexia, clonus (inducible or spontaneous), tremor, rigidity.
+  2. Autonomic Instability: Hyperthermia, tachycardia, diaphoresis, labile blood pressure, flushing.
+  3. Mental Status Changes: Agitation, confusion, restlessness, delirium.
+- Management: Discontinue all serotonergic agents immediately, provide supportive cooling, IV fluids, and administer Cyproheptadine (serotonin antagonist, 12 mg initial oral dose).
+
+--- PAGE 3 ---
+SECTION 3: ACUTE MIGRAINE PHARMACOTHERAPY & CONTRAINDICATIONS
+
+3.1 Abortive Therapy for Moderate-to-Severe Migraine
+- Triptans (5-HT 1B/1D Agonists):
+  * Sumatriptan: 50–100 mg PO single dose at onset; may repeat once after 2 hours (Max 200 mg in 24 hours). Also available as 6 mg subcutaneous injection (Max 12 mg/24h).
+  * Zolmitriptan: 2.5–5 mg PO single dose; may repeat after 2 hours (Max 10 mg/24h).
+- Non-Steroidal Anti-Inflammatory Drugs (NSAIDs) combination: Naproxen sodium 500 mg PO combined with Sumatriptan significantly improves pain relief.
+
+3.2 Triptan Contraindications (Absolute Safety Rules):
+- Ischemic heart disease, prior myocardial infarction, or coronary artery vasospasm (Prinzmetal angina).
+- History of stroke or transient ischemic attack (TIA).
+- Peripheral vascular disease or ischemic bowel disease.
+- Severe or uncontrolled hypertension (Systolic BP >= 160 mmHg or Diastolic >= 100 mmHg).
+- Concurrent use of Monoamine Oxidase Inhibitors (MAOIs) or within 2 weeks of discontinuation.

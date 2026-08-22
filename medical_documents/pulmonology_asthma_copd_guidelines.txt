@@ -1,0 +1,56 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: PULMONOLOGY (ASTHMA & COPD)
+================================================================================
+Document ID: DOC-ID-2026-012
+Effective Date: 2026-01-30
+Category: Respiratory & Pulmonology Guidelines
+
+--- PAGE 1 ---
+SECTION 1: GINA ASTHMA MANAGEMENT & THE SMART STRATEGY
+
+1.1 GINA Track 1 Preferred Management (SMART Regimen)
+- The Global Initiative for Asthma (GINA) recommends Track 1 as the preferred treatment approach for adolescents and adults (age >= 12 years):
+  * Controller and Reliever: Single Inhaler Maintenance and Reliever Therapy (SMART) using low-dose Inhaled Corticosteroid (ICS) + Formoterol (e.g., Budesonide-Formoterol 160/4.5 mcg).
+  * Steps 1–2 (Mild Asthma): As-needed low-dose ICS-formoterol taken whenever symptoms occur (No daily maintenance inhaler needed in mild intermittent asthma).
+  * Step 3 (Moderate Asthma): Daily low-dose ICS-formoterol maintenance (1 inhalation BID) PLUS as-needed ICS-formoterol for symptom relief.
+  * Step 4 (Severe Asthma): Daily medium-dose ICS-formoterol maintenance (2 inhalations BID) PLUS as-needed ICS-formoterol for symptom relief.
+  * Step 5: Add Long-Acting Muscarinic Antagonist (LAMA, e.g., Tiotropium) or biologic therapies (anti-IgE, anti-IL5/5R, anti-IL4R).
+
+1.2 Paradigm Shift (Why SABA Monotherapy is Not Recommended)
+- SABA (Short-Acting Beta-2 Agonist, e.g., Albuterol alone) monotherapy is NO LONGER recommended because it does not treat underlying airway inflammation and increases the risk of severe exacerbations and asthma-related mortality.
+
+--- PAGE 2 ---
+SECTION 2: ACUTE SEVERE ASTHMA EXACERBATION PROTOCOL
+
+2.1 Initial Severity Assessment
+- Severe Exacerbation Indicators: Inability to speak in full sentences, accessory muscle use, respiratory rate > 25 breaths/min, heart rate > 110 bpm, Peak Expiratory Flow (PEF) < 50% of predicted or personal best, oxygen saturation (SpO2) < 92%.
+- Life-Threatening ("Near-Fatal") Signs: Silent chest, cyanosis, bradycardia, confusion, exhaustion, normal or elevated PaCO2 on ABG (indicating impending respiratory failure).
+
+2.2 Acute Emergency Pharmacotherapy
+1. High-Flow Oxygen: Titrated via nasal cannula or mask to achieve target oxygen saturation of 93% to 95% (94%–98% in pregnant patients).
+2. Inhaled Bronchodilators:
+   * Albuterol 2.5–5 mg nebulized every 20 minutes for 3 doses, then 2.5–5 mg every 1–4 hours as needed (or continuous nebulization 10–15 mg/hour).
+   * PLUS Ipratropium Bromide 0.5 mg nebulized every 20 minutes for 3 doses in the first hour alongside Albuterol.
+3. Systemic Corticosteroids (Administer within 1 hour):
+   * Oral Prednisone or Prednisolone 40 to 50 mg PO daily for 5 to 7 days (Oral route is as effective and fast as IV administration unless patient is vomiting or in extremis).
+   * IV Methylprednisolone 40–60 mg IV every 6–8 hours for patients unable to swallow or in intensive care.
+4. Intravenous Magnesium Sulfate:
+   * Magnesium Sulfate 2 g IV infused over 20 minutes for patients with severe exacerbations (PEF < 50%) refractory to initial 1-hour therapy.
+
+--- PAGE 3 ---
+SECTION 3: GOLD COPD GUIDELINES (DIAGNOSIS & ABE PHARMACOTHERAPY)
+
+3.1 Diagnostic Spirometry Criteria
+- Post-bronchodilator FEV1 / FVC ratio < 0.70 confirms persistent airflow limitation and establishes the clinical diagnosis of Chronic Obstructive Pulmonary Disease (COPD).
+
+3.2 GOLD ABE Assessment & First-Line Inhaler Regimens
+- Group A (0–1 moderate exacerbations per year not leading to hospital admission, low symptom score mMRC 0–1 or CAT < 10):
+  * Bronchodilator monotherapy (Short-acting or Long-acting, SABA, SAMA, LABA, or LAMA).
+- Group B (0–1 moderate exacerbations per year, high symptom score mMRC >= 2 or CAT >= 10):
+  * Dual Long-Acting Bronchodilator: LAMA + LABA combination (e.g., Tiotropium-Olodaterol, Umeclidinium-Vilanterol) is superior to monotherapy.
+- Group E (>= 2 moderate exacerbations or >= 1 exacerbation requiring hospital admission, high risk):
+  * Initial Therapy: LAMA + LABA combination.
+  * Triple Therapy (LABA + LAMA + Inhaled Corticosteroid ICS): Strongly recommended if blood eosinophil count is >= 300 cells/mcL, or >= 100 cells/mcL with recurrent exacerbations.
+
+3.3 Hypoxemic Respiratory Failure in COPD
+- Target Oxygen Saturation in COPD: 88% to 92% (Avoid hyperoxia which blunts hypoxic drive, worsens V/Q mismatch, and induces hypercapnic respiratory acidosis).

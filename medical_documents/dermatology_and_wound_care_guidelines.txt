@@ -1,0 +1,48 @@
+================================================================================
+CLINICAL PRACTICE GUIDELINES: DERMATOLOGY & ADVANCED WOUND CARE
+================================================================================
+Document ID: DOC-ID-2026-017
+Effective Date: 2026-02-20
+Category: Dermatology & Wound Management
+
+--- PAGE 1 ---
+SECTION 1: SEVERE CUTANEOUS ADVERSE REACTIONS (SJS & TEN)
+
+1.1 Clinical Differentiation & Culprit Drugs
+- Stevens-Johnson Syndrome (SJS): Epidermal detachment < 10% total Body Surface Area (BSA) with mucosal membrane involvement in >= 2 sites (oral, ocular, urogenital).
+- SJS/TEN Overlap: 10% to 30% BSA detachment.
+- Toxic Epidermal Necrolysis (TEN): > 30% BSA epidermal sloughing with positive Nikolsky sign.
+- High-Risk Culprit Drugs: Allopurinol, Aromatic Anticonvulsants (Carbamazepine, Phenytoin, Lamotrigine), Sulfonamides (TMP-SMX), Nevirapine, and Oxicam NSAIDs (Meloxicam, Piroxicam).
+
+1.2 Emergency Management & SCORTEN Prognostic Score
+- Immediate Actions:
+  * Immediately withdraw ALL suspected and newly initiated medications.
+  * Transfer urgently to an Intensive Care Unit (ICU) or specialized Burn Center.
+  * Avoid aggressive debridement; provide sterile non-adherent silicone dressings, aggressive fluid replacement, and urgent ophthalmology consultation for amniotic membrane grafting.
+- SCORTEN Predictors of Mortality (1 point each): Age >= 40, Heart rate >= 120 bpm, Malignancy, BSA detached > 10%, Serum Urea > 28 mg/dL, Serum Glucose > 252 mg/dL, Serum Bicarbonate < 20 mEq/L.
+
+--- PAGE 2 ---
+SECTION 2: CELLULITIS & ERYSIPELAS ANTIMICROBIAL REGIMENS
+
+2.1 Non-Purulent vs Purulent Cellulitis Stratification
+- Non-Purulent Cellulitis (Streptococcus pyogenes predominance):
+  * Mild / Outpatient: Cephalexin 500 mg PO four times daily (QID) for 5 to 7 days, OR Amoxicillin 500 mg PO TID. Penicillin allergy: Clindamycin 300–450 mg PO QID.
+  * Moderate / Inpatient: Intravenous Cefazolin 1–2 g IV every 8 hours or Ceftriaxone 1–2 g IV daily.
+- Purulent Cellulitis / Suspected CA-MRSA (Staphylococcus aureus predominance):
+  * Outpatient: Trimethoprim-Sulfamethoxazole (TMP-SMX) 1–2 DS tablets PO BID for 5 to 10 days, OR Doxycycline 100 mg PO BID.
+  * Inpatient / Severe: Intravenous Vancomycin (15–20 mg/kg IV every 8–12 hours, target trough 15–20 mcg/mL) or Daptomycin 6–8 mg/kg IV daily.
+
+--- PAGE 3 ---
+SECTION 3: PRESSURE INJURY STAGING & WOUND DRESSING SELECTION
+
+3.1 NPUAP Pressure Injury Stages
+- Stage 1: Non-blanchable erythema of intact skin over a bony prominence.
+- Stage 2: Partial-thickness skin loss with exposed dermis (shallow open ulcer with red/pink wound bed or intact/ruptured serum-filled blister).
+- Stage 3: Full-thickness skin loss; adipose tissue is visible, but bone, tendon, or muscle are not exposed.
+- Stage 4: Full-thickness skin and tissue loss with directly exposed or palpable fascia, muscle, tendon, ligament, or bone.
+- Unstageable: Full-thickness tissue loss in which base is completely obscured by slough (yellow/tan) or eschar (brown/black).
+
+3.2 Evidence-Based Dressing Selection
+- Exudative / Heavily Draining Wounds: Calcium Alginate dressings or Hydrofiber (absorbs up to 20 times its weight).
+- Dry / Necrotic Wounds Requiring Autolytic Debridement: Amorphous Hydrogel dressings to donate moisture.
+- Light-to-Moderate Drainage & Epithelialization: Hydrocolloid dressings or Foam dressings.

@@ -1,0 +1,110 @@
+{
+  "total_queries": 10,
+  "positive_queries": 9,
+  "negative_queries": 1,
+  "recall_at_10": 1.0,
+  "rerank_hit_at_4": 1.0,
+  "mean_reciprocal_rank_mrr": 1.0,
+  "hallucination_refusal_accuracy": 1.0,
+  "avg_retrieval_latency_ms": 5941.79,
+  "detailed_results": [
+    {
+      "id": "eval_001",
+      "category": "single_document_retrieval",
+      "query": "What is the recommended first-line pharmacological treatment for Type 2 Diabetes and what is the starting dose?",
+      "expected": "diabetes_guidelines.pdf (Page 2)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 24428.24
+    },
+    {
+      "id": "eval_002",
+      "category": "single_document_retrieval",
+      "query": "What are the four foundational medication classes in Guideline-Directed Medical Therapy (GDMT) for Heart Failure with reduced ejection fraction (HFrEF)?",
+      "expected": "cardiology_guidelines.pdf (Page 2)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 6195.16
+    },
+    {
+      "id": "eval_003",
+      "category": "multi_document_comparison",
+      "query": "What is the eGFR cutoff for Metformin contraindication and how does it compare to the initiation threshold for SGLT2 inhibitors like Empagliflozin?",
+      "expected": "diabetes_guidelines.pdf (Page 4)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 4335.32
+    },
+    {
+      "id": "eval_004",
+      "category": "conflicting_guidelines",
+      "query": "What differences or conflicting target blood pressure thresholds exist across clinical hypertension guidelines?",
+      "expected": "clinical_guidelines.pdf (Page 3)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 4422.52
+    },
+    {
+      "id": "eval_005",
+      "category": "emergency_resuscitation",
+      "query": "What is the first-line medication and dose for acute anaphylaxis in adults?",
+      "expected": "emergency_protocols.txt (Page 2)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 3534.88
+    },
+    {
+      "id": "eval_006",
+      "category": "toxicology_and_antidotes",
+      "query": "What is the 21-hour IV N-Acetylcysteine 3-bag protocol for acetaminophen overdose?",
+      "expected": "toxicology_and_poisoning_guidelines.txt (Page 1)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 4463.84
+    },
+    {
+      "id": "eval_007",
+      "category": "obstetrics_protocols",
+      "query": "What is the loading and maintenance dose of Magnesium Sulfate for preeclampsia seizure prophylaxis?",
+      "expected": "obstetrics_and_gynecology_guidelines.txt (Page 1)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 4123.21
+    },
+    {
+      "id": "eval_008",
+      "category": "gastroenterology_triage",
+      "query": "What is the Glasgow-Blatchford Score cutoff for high-risk upper gastrointestinal bleeding?",
+      "expected": "gastroenterology_and_hepatology_guidelines.txt (Page 1)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 3993.26
+    },
+    {
+      "id": "eval_009",
+      "category": "out_of_scope_hallucination_check",
+      "query": "What are the surgical steps for performing a pediatric heart transplantation in congenital heart disease?",
+      "expected": "Negative / Rejection",
+      "is_correctly_rejected": true,
+      "latency_ms": 81.91
+    },
+    {
+      "id": "eval_010",
+      "category": "single_document_retrieval",
+      "query": "What is the 'Rule of 15' for managing hypoglycemia?",
+      "expected": "diabetes_guidelines.pdf (Page 3)",
+      "retrieval_hit": true,
+      "hit_rank": 1,
+      "rerank_hit": true,
+      "latency_ms": 3839.57
+    }
+  ]
+}
