@@ -13,6 +13,36 @@
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. Chat Interface — Grounded Clinical Q&A with Citations
+> The main conversational interface showing a clinical query about Pediatric Acute Otitis Media. The AI returns a **grounded, evidence-based answer** with drug dosing tables, verified page citations, and a medical disclaimer — all retrieved from indexed clinical guidelines.
+
+![Chat Interface — Clinical Q&A with Verified Citations](Photo/chat-interface.png)
+
+---
+
+### 2. Knowledge Base Library — 25 Indexed Medical Documents
+> The **Reference Library** modal displaying all 25 pre-indexed clinical documents organized by category (Guidelines, Manuals, Research, Protocols). Each card shows a summary and allows one-click querying.
+
+![Knowledge Base Library — 25 Indexed Documents](Photo/knowledge-base-library.png)
+
+---
+
+### 3. RBAC Authentication — Role-Based Persona Switcher
+> The **Authentication & Role-Based Access** modal with 1-click Quick-Login personas for 4 enterprise roles: `ADMIN` (full platform), `FDE_ENGINEER` (internal SOPs + assigned tenant), `CUSTOMER` (isolated tenant clearance). Includes custom credentials login with JWT token authentication.
+
+![RBAC Authentication — Quick-Login Persona Switcher](Photo/rbac-auth-modal.png)
+
+---
+
+### 4. Admin Console — User Management & Security Governance
+> The **Enterprise Administration & Governance** panel showing user CRUD operations, role assignment (`ADMIN`, `FDE_ENGINEER`, `CUSTOMER`), tenant provisioning (`system`, `customer_001`, `customer_002`), and the Security Audit Logs tab for real-time event monitoring.
+
+![Admin Console — User Management & Governance](Photo/admin-console.png)
+
+---
+
 ## 1. Executive Summary & Customer Problem
 
 Healthcare institutions, medical centers, and clinical research groups manage tens of thousands of pages of clinical practice guidelines, pharmacopeia drug monographs, and consensus statements. Medical practitioners and researchers spend extensive hours manually searching, cross-referencing, and synthesizing information across disparate documents.
